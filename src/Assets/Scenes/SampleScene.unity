@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 626832834}
   - component: {fileID: 626832833}
   - component: {fileID: 626832837}
+  - component: {fileID: 626832838}
   m_Layer: 0
   m_Name: Sub Camera
   m_TagString: Untagged
@@ -530,6 +531,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194225}
   subCamera: {fileID: 626832831}
+--- !u!114 &626832838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626832831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMove: 0.01
+  normalFall: {fileID: 0}
+  PlayerRotate: 0.1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1082,8 @@ GameObject:
   - component: {fileID: 1784303132}
   - component: {fileID: 1784303131}
   - component: {fileID: 1784303130}
+  - component: {fileID: 1784303135}
+  - component: {fileID: 1784303134}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1154,6 +1172,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1784303134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784303129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMove: 0.01
+  normalFall: {fileID: 0}
+  PlayerRotate: 0.1
+--- !u!114 &1784303135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784303129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45d21603a717be4e8e90d5ffbf9af6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDistance: 300
+  fallSped: 15
 --- !u!1 &1809426482
 GameObject:
   m_ObjectHideFlags: 0
