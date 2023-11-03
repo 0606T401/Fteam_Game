@@ -326,9 +326,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 331915816}
-  m_Layer: 0
-  m_Name: PlayerAccelerationPoint
+  - component: {fileID: 427900317}
+  - component: {fileID: 427900316}
+  - component: {fileID: 427900315}
+  - component: {fileID: 427900314}
+  - component: {fileID: 427900318}
+  m_Layer: 5
+  m_Name: Canvas2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
