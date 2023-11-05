@@ -7,9 +7,8 @@ public class Acceletion : MonoBehaviour
     private HeadPoint head;
     private FeetPoint feet;
     private ArmPoint arm;
-    public NormalFall fall;
-    public NormalFall fallCamera;
     public float acceleration = 5f;
+    public Data data;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +23,7 @@ public class Acceletion : MonoBehaviour
         if(arm.PassArm||feet.PassFeet||head.PassHead)
         {
             Debug.Log("Pass");
-            fall.fallSpeed += acceleration;
-            fallCamera.fallSpeed += acceleration;
+            data.fallspeed += acceleration;
             arm.PassArm = false;
             feet.PassFeet = false;
             head.PassHead = false;
