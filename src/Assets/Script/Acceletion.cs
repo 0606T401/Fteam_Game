@@ -20,7 +20,7 @@ public class Acceletion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(arm.PassArm||feet.PassFeet||head.PassHead)
+        if(arm.PassArm&&feet.PassFeet&&head.PassHead)
         {
             Debug.Log("Pass");
             data.fallspeed += acceleration;
