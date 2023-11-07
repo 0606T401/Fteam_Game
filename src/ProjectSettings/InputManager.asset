@@ -293,7 +293,6 @@ InputManager:
     type: 0
     axis: 0
     joyNum: 0
-<<<<<<< Updated upstream
   - serializedVersion: 3
     m_Name: Abutton
     descriptiveName: 
@@ -366,9 +365,9 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: joystick button 7
-    gravity: 3
-    dead: 0.1
-    sensitivity: 3
+    gravity: 0
+    dead: 0
+    sensitivity: 0
     snap: 0
     invert: 0
     type: 2
@@ -382,15 +381,12 @@ InputManager:
     positiveButton: 
     altNegativeButton: 
     altPositiveButton: joystick button 6
-    gravity: 3
-    dead: 0.1
-    sensitivity: 3
+    gravity: 0
+    dead: 0
+    sensitivity: 0
     snap: 0
     invert: 0
     type: 2
     axis: 0
     joyNum: 0
   m_UsePhysicalKeys: 0
-=======
-  m_UsePhysicalKeys: 1
->>>>>>> Stashed changes
