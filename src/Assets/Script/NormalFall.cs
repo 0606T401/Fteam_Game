@@ -5,6 +5,7 @@ using UnityEngine;
 public class NormalFall : MonoBehaviour
 {
     public float playerDistance = 300;
+
     private StartTimer timer;
     public Data data;
 
@@ -21,8 +22,10 @@ public class NormalFall : MonoBehaviour
         {
             if (playerDistance > 0)
             {
+
                 transform.position += Vector3.down * data.fallspeed * Time.deltaTime;
                 playerDistance -= data.fallspeed * Time.deltaTime;
+
             }
         }
     }

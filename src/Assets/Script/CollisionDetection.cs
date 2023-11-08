@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionDetection : MonoBehaviour
 {
     [SerializeField] GameObject Player;
+    public Data data;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,8 @@ public class CollisionDetection : MonoBehaviour
     {
         if (col.gameObject.name == "chara")
         {
-            Debug.Log("ok");
+            Debug.Log("Hit");
+            data.FallSpeed = 0f;
         }
 
     }

@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+
 --- !u!1 &8811466806354205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+
 --- !u!1 &8811466806701368624
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,9 +756,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f7aebdcbb133746aa7e7b782f997f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
   fall: {fileID: 0}
   fallCamera: {fileID: 0}
   acceleration: 5
+
 --- !u!1 &8811466807940852019
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+
 --- !u!1 &8811466808021201608
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,3 +984,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
+
