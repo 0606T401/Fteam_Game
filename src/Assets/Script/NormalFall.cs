@@ -5,8 +5,9 @@ using UnityEngine;
 public class NormalFall : MonoBehaviour
 {
     public float playerDistance = 300;
-    public Data data;
+
     private StartTimer timer;
+    public Data data;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +22,10 @@ public class NormalFall : MonoBehaviour
         {
             if (playerDistance > 0)
             {
-                transform.position += Vector3.down * data.FallSpeed * Time.deltaTime;
-                playerDistance -= data.FallSpeed * Time.deltaTime;
+
+                transform.position += Vector3.down * data.fallspeed * Time.deltaTime;
+                playerDistance -= data.fallspeed * Time.deltaTime;
+
             }
         }
     }

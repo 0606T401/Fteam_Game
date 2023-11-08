@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Data : MonoBehaviour
 {
-    public float FallSpeed = 15f;
+
+    public float fallspeed = 15f;
+
     // Start is called before the first frame update
     void Start()
     {
