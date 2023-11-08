@@ -23,7 +23,7 @@ public class CollisionDetection : MonoBehaviour
         if (col.gameObject.name == "chara")
         {
             Debug.Log("Hit");
-            data.FallSpeed = 0f;
+            data.fallspeed = 0f;
         }
 
     }
