@@ -981,7 +981,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &813763952
 GameObject:
@@ -1080,6 +1080,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813763952}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &946083994 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
+  m_PrefabInstance: {fileID: 1047196565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &948441674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1181,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -1324,7 +1329,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1184765262}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
       propertyPath: m_RootOrder
@@ -1348,7 +1353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1356,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e50f71cb37eaed447af98f49f9a1c621, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1421,6 +1426,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   - {fileID: 626832832}
+  - {fileID: 946083994}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
