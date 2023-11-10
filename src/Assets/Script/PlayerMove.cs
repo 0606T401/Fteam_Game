@@ -20,6 +20,10 @@ public class PlayerMove : MonoBehaviour
 
     public float PlayerRotate = 0.1f;
 
+    //　ポーズした時に表示するUI
+    [SerializeField] private GameObject pauseUI;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +34,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //  Player.transform.position = (new Vector3(Mathf.Clamp(Player.transform.position.x, -15f.transform.position.x, 15f.transform.position.x), Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, -6f.transform.position.z, 6f.transform.position.z)));
 
@@ -116,9 +120,14 @@ public class PlayerMove : MonoBehaviour
                 if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
                 {
                     Debug.Log("START_BACK_button");
+
+                    Time.timeScale = 0f;
+
                 }
 
             }
+
+            
         }
 
     }
