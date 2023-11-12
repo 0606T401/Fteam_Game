@@ -15,7 +15,7 @@ public class CountUpTimer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (timer.CountDownTime < 0)
         {
