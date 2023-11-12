@@ -38,7 +38,7 @@ public class DollyDriver : MonoBehaviour
 		this.pathPositionMin = this.dolly.m_Path.MinPos;
 	}
 
-	private void FixedUpdate()
+	private void Update()
 	{
 		if (timer.CountDownTime >= 0)
 		{
