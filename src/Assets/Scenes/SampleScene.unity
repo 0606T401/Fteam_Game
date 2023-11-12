@@ -221,10 +221,16 @@ MeshFilter:
   m_GameObject: {fileID: 269072}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &56353739
 =======
 --- !u!1 &11597422
 >>>>>>> pause
+=======
+<<<<<<< Updated upstream
+=======
+--- !u!1 &11597422
+>>>>>>> fix_acceletion
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,6 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 56353740}
   - component: {fileID: 56353743}
   - component: {fileID: 56353742}
@@ -240,17 +247,23 @@ GameObject:
   m_Layer: 0
   m_Name: pCube1 (3)
 =======
+=======
+>>>>>>> fix_acceletion
   - component: {fileID: 11597423}
   - component: {fileID: 11597425}
   - component: {fileID: 11597424}
   m_Layer: 5
   m_Name: Text (TMP)
+<<<<<<< HEAD
 >>>>>>> pause
+=======
+>>>>>>> fix_acceletion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!4 &56353740
 Transform:
@@ -258,10 +271,15 @@ Transform:
 --- !u!224 &11597423
 RectTransform:
 >>>>>>> pause
+=======
+--- !u!224 &11597423
+RectTransform:
+>>>>>>> fix_acceletion
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 56353739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -275,6 +293,8 @@ RectTransform:
 --- !u!64 &56353741
 MeshCollider:
 =======
+=======
+>>>>>>> fix_acceletion
   m_GameObject: {fileID: 11597422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -291,11 +311,15 @@ MeshCollider:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &11597424
 MonoBehaviour:
+<<<<<<< HEAD
 >>>>>>> pause
+=======
+>>>>>>> fix_acceletion
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 56353739}
   m_Material: {fileID: 0}
@@ -308,6 +332,8 @@ MonoBehaviour:
 --- !u!23 &56353742
 MeshRenderer:
 =======
+=======
+>>>>>>> fix_acceletion
   m_GameObject: {fileID: 11597422}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -393,11 +419,15 @@ MeshRenderer:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &11597425
 CanvasRenderer:
+<<<<<<< HEAD
 >>>>>>> pause
+=======
+>>>>>>> fix_acceletion
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 56353739}
   m_Enabled: 1
@@ -442,19 +472,27 @@ CanvasRenderer:
 --- !u!33 &56353743
 MeshFilter:
 =======
+=======
+>>>>>>> fix_acceletion
   m_GameObject: {fileID: 11597422}
   m_CullTransparentMesh: 1
 --- !u!1 &21109891
 GameObject:
+<<<<<<< HEAD
 >>>>>>> pause
+=======
+>>>>>>> fix_acceletion
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 56353739}
   m_Mesh: {fileID: 4068373912626513877, guid: d6d791456a99c0549803f9eeb7150a57, type: 3}
 =======
+=======
+>>>>>>> fix_acceletion
   serializedVersion: 6
   m_Component:
   - component: {fileID: 21109892}
@@ -584,7 +622,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21109891}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 >>>>>>> pause
+=======
+>>>>>>> Stashed changes
+>>>>>>> fix_acceletion
 --- !u!1 &56697566
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +991,10 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< HEAD
 --- !u!1 &427900313
+=======
+>>>>>>> fix_acceletion
 =======
 --- !u!1001 &148907318
 PrefabInstance:
@@ -1318,7 +1363,10 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6d791456a99c0549803f9eeb7150a57, type: 3}
 --- !u!1 &331915815
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> fix_acceletion
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1414,6 +1462,7 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1422,6 +1471,8 @@ RectTransform:
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &427900318
 =======
+=======
+>>>>>>> fix_acceletion
 --- !u!1 &411331269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,12 +1512,16 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411331271
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> fix_acceletion
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 427900313}
   m_Enabled: 1
@@ -1478,6 +1533,8 @@ MonoBehaviour:
   BackTitleButton: {fileID: 1990905153}
   pauseUI: {fileID: 1569016202}
 =======
+=======
+>>>>>>> fix_acceletion
   m_GameObject: {fileID: 411331269}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1860,6 +1917,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 15
 =======
   m_RootOrder: 9
@@ -1873,7 +1931,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -1982,6 +2040,15 @@ MeshFilter:
   m_GameObject: {fileID: 521549497}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &539635474
+=======
+<<<<<<< Updated upstream
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &588354636
+>>>>>>> fix_acceletion
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1989,6 +2056,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 539635475}
   - component: {fileID: 539635478}
   - component: {fileID: 539635477}
@@ -1996,16 +2064,22 @@ GameObject:
   m_Layer: 5
   m_Name: ProceedButton
 =======
+=======
+>>>>>>> fix_acceletion
   - component: {fileID: 588354637}
   - component: {fileID: 588354639}
   - component: {fileID: 588354638}
   m_Layer: 5
   m_Name: Pause
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> fix_acceletion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_IsActive: 1
 --- !u!224 &539635475
@@ -2013,21 +2087,30 @@ GameObject:
   m_IsActive: 0
 --- !u!224 &588354637
 >>>>>>> Stashed changes
+=======
+  m_IsActive: 0
+--- !u!224 &588354637
+>>>>>>> fix_acceletion
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 539635474}
 =======
   m_GameObject: {fileID: 588354636}
 >>>>>>> Stashed changes
+=======
+  m_GameObject: {fileID: 588354636}
+>>>>>>> fix_acceletion
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   - {fileID: 824019895}
   m_Father: {fileID: 1219250743}
@@ -2040,6 +2123,8 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539635476
 =======
+=======
+>>>>>>> fix_acceletion
   - {fileID: 418908117}
   - {fileID: 1006315414}
   m_Father: {fileID: 1809426486}
@@ -2051,12 +2136,16 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588354638
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> fix_acceletion
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 539635474}
   m_Enabled: 1
@@ -2106,28 +2195,39 @@ MonoBehaviour:
 =======
   m_GameObject: {fileID: 588354636}
 >>>>>>> Stashed changes
+=======
+  m_GameObject: {fileID: 588354636}
+>>>>>>> fix_acceletion
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
 >>>>>>> Stashed changes
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+>>>>>>> fix_acceletion
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
 =======
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> Stashed changes
+=======
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> fix_acceletion
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2137,22 +2237,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 --- !u!222 &539635478
 =======
 --- !u!222 &588354639
 >>>>>>> Stashed changes
+=======
+--- !u!222 &588354639
+>>>>>>> fix_acceletion
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 539635474}
 =======
   m_GameObject: {fileID: 588354636}
 >>>>>>> Stashed changes
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 588354636}
+  m_CullTransparentMesh: 1
+>>>>>>> Stashed changes
+>>>>>>> fix_acceletion
 --- !u!1 &626832831
 GameObject:
   m_ObjectHideFlags: 0
