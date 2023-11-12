@@ -3002,7 +3002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMove: 0.01
+  playerMove: 0.1
   normalFall: {fileID: 1544894278}
   PlayerRotate: 0.1
 --- !u!114 &1544894278
