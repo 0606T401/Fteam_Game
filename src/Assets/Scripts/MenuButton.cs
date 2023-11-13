@@ -13,6 +13,7 @@ public class MenuButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GameStart = GameObject.Find("/Canvas/GameStart").GetComponent<Button>();
         HowToPlay = GameObject.Find("/Canvas/HowtoPlay").GetComponent <Button>();
         Settings = GameObject.Find("/Canvas/Settings").GetComponent <Button> ();

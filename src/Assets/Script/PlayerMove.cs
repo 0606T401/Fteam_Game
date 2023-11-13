@@ -30,7 +30,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //  Player.transform.position = (new Vector3(Mathf.Clamp(Player.transform.position.x, -15f.transform.position.x, 15f.transform.position.x), Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, -6f.transform.position.z, 6f.transform.position.z)));
 
@@ -115,6 +115,7 @@ public class PlayerMove : MonoBehaviour
 
                 if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
                 {
+                    //Time.timeScale = 0;
                     Debug.Log("START_BACK_button");
                 }
 

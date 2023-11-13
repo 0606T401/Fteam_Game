@@ -46,6 +46,8 @@ public class FadeOutToMenu: MonoBehaviour
         }
     }
 
+
+
     public void FadeOut()
     {
         alpha += 0.001f;
