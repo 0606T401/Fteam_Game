@@ -16,7 +16,7 @@ public class FadeOutToMenu: MonoBehaviour
 
     private bool fadeout;          //フェードアウトのフラグ変数
 
-
+    public float fadespeed = 0.1f;
     // Use this for initialization
     void Start()
     {
@@ -48,7 +48,7 @@ public class FadeOutToMenu: MonoBehaviour
 
     public void FadeOut()
     {
-        alpha += 0.001f;
+        alpha += fadespeed;
         fadealpha.color = new Color(0, 0, 0, alpha);
         if (alpha >= 1)
         {

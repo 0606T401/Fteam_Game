@@ -16,6 +16,7 @@ public class FadeInScript : MonoBehaviour
 
     public bool fadein;          //フェードアウトのフラグ変数
 
+    public float fadetime =0.01f;
     // Use this for initialization
     void Start()
     {
@@ -33,7 +34,7 @@ public class FadeInScript : MonoBehaviour
 
     void FadeIn()
     {
-        alpha -= 0.001f;
+        alpha -= fadetime;
         fadealpha.color = new Color(0, 0, 0, alpha);
         if (alpha <= 0)
         {

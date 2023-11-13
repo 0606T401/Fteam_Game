@@ -14,7 +14,7 @@ public class FadeOutToHtP : MonoBehaviour
 
     private bool fadeout;          //フェードアウトのフラグ変数
 
-
+    public float FadeSpeed = 0.1f;
     // Use this for initialization
     void Start()
     {
@@ -44,7 +44,7 @@ public class FadeOutToHtP : MonoBehaviour
 
     void FadeOut()
     {
-        alpha += 0.001f;
+        alpha += FadeSpeed;
         fadealpha.color = new Color(0, 0, 0, alpha);
         if (alpha >= 1)
         {
