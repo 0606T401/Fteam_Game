@@ -229,6 +229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   data: {fileID: 0}
+  GameOver: {fileID: 0}
+  pouseFirstbutton: {fileID: 0}
 --- !u!1 &8811466806354205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +343,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   data: {fileID: 0}
+  GameOver: {fileID: 0}
+  pouseFirstbutton: {fileID: 0}
 --- !u!1 &8811466806701368624
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   data: {fileID: 0}
+  GameOver: {fileID: 0}
+  pouseFirstbutton: {fileID: 0}
 --- !u!1 &8811466808021201608
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,3 +991,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   data: {fileID: 0}
+  GameOver: {fileID: 0}
+  pouseFirstbutton: {fileID: 0}

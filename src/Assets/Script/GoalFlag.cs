@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GoalFlag : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GoalFlag : MonoBehaviour
     bool GoalFeet;
     bool GoalArm;
     public bool Goal;
+    public GameObject ClearPanel;
+    public GameObject PauseFirstButton;
+    public Data data;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,10 @@ public class GoalFlag : MonoBehaviour
             {
                 Goal = true;
                 Debug.Log("Goal ok");
+                data.fallspeed = 0f;
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(PauseFirstButton);
+                ClearPanel.SetActive(true);
             }
             
         }
