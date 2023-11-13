@@ -584,6 +584,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -599,6 +603,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
@@ -620,6 +628,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -635,6 +647,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
@@ -1559,7 +1575,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2850,6 +2866,7 @@ MonoBehaviour:
   data: {fileID: 764699341}
   GameOver: {fileID: 318030940}
   pouseFirstbutton: {fileID: 788720316}
+  goal: {fileID: 1112049265}
 --- !u!65 &948441680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3522,6 +3539,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -3537,6 +3558,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
@@ -3558,6 +3583,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -3573,6 +3602,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
@@ -4068,7 +4101,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -4933,6 +4966,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -4948,6 +4985,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
@@ -4969,6 +5010,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764699341}
     - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
+    - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 633843985}
@@ -4984,6 +5029,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
+      propertyPath: goal
+      value: 
+      objectReference: {fileID: 1112049265}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: Player
       value: 

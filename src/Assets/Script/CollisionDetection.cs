@@ -11,6 +11,8 @@ public class CollisionDetection : MonoBehaviour
     public GameObject GameOver;
 
     public GameObject pouseFirstbutton;
+
+    public GoalFlag goal;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,20 +27,24 @@ public class CollisionDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "chara")
+        if(!goal.Goal)
         {
-            Debug.Log("Hit");
-            data.Hit = true;
-            data.fallspeed = 0f;
+            if (col.gameObject.name == "chara")
+            {
+                Debug.Log("Hit");
+                data.Hit = true;
+                data.fallspeed = 0f;
 
-            EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(null);
 
 
-            EventSystem.current.SetSelectedGameObject(pouseFirstbutton);
+                EventSystem.current.SetSelectedGameObject(pouseFirstbutton);
 
-            GameOver.SetActive(true);
+                GameOver.SetActive(true);
 
+            }
         }
+        
 
     }
 }
