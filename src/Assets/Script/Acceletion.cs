@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Acceletion : MonoBehaviour
 {
-    private HeadPoint head;
-    private FeetPoint feet;
-    private ArmPoint arm;
+    public ArmPoint arm;
+    public FeetPoint feet;
+    public HeadPoint head;
 
     public float acceleration = 5f;
     public Data data;
     // Start is called before the first frame update
     void Start()
     {
-        head = GameObject.Find("HeadPoint").GetComponent<HeadPoint>();
-        feet = GameObject.Find("FeetPoint").GetComponent<FeetPoint>();
-        arm = GameObject.Find("ArmPoint").GetComponent<ArmPoint>();
+
     }
 
     // Update is called once per frame
