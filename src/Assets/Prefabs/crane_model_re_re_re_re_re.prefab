@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 8541630510967844080}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 1.29, y: 273.89, z: -3.08}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1611278033141190698}
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-
+  data: {fileID: 0}
 --- !u!1 &8811466806354205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-
+  data: {fileID: 0}
 --- !u!1 &8811466806701368624
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ Transform:
   m_GameObject: {fileID: 8811466806701368624}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 6.9322, y: -1.0020142, z: -0.2492}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.19999999}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8811466807486819750}
@@ -481,7 +481,7 @@ Transform:
   m_GameObject: {fileID: 8811466806780263178}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 6.46, y: -1.008, z: 0.682}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8811466807486819750}
@@ -627,7 +627,7 @@ Transform:
   m_GameObject: {fileID: 8811466807376419093}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 6.3245993, y: -1.0020142, z: -0.6590002}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8811466807486819750}
@@ -756,11 +756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f7aebdcbb133746aa7e7b782f997f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
-  fall: {fileID: 0}
-  fallCamera: {fileID: 0}
   acceleration: 5
-
+  data: {fileID: 0}
 --- !u!1 &8811466807940852019
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-
+  data: {fileID: 0}
 --- !u!1 &8811466808021201608
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,4 +981,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-
+  data: {fileID: 0}

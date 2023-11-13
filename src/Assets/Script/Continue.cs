@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Data : MonoBehaviour
+public class Continue : MonoBehaviour
 {
-    public bool Hit;
-    public float fallspeed = 15f;
-
     // Start is called before the first frame update
     void Start()
     {
