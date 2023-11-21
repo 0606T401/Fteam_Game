@@ -8,6 +8,9 @@ public class CountUpTimer : MonoBehaviour
     private StartTimer timer;
     public float CountUpTime = 0f;
     public TextMeshProUGUI time;
+    public GoalFlag goal;
+    public Data data;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,9 @@ public class CountUpTimer : MonoBehaviour
             time.text = string.Format("{0:0}", CountUpTime);
             CountUpTime += Time.deltaTime;
         }
-        
+        if (goal.Goal || data.Hit)
+        {
+            Time.timeScale = 0;
+        }
     }
 }
