@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     private bool BbuttonDownFlag = false;
     private bool XbuttonDownFlag = false;
 
-    public float PlayerRotate = 0.1f;
+    public float PlayerRotate = 0.5f;
 
     // Start is called before the first frame update
     void Start()
