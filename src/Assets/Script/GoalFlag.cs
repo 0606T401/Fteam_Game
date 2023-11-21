@@ -30,7 +30,7 @@ public class GoalFlag : MonoBehaviour
                 Goal = true;
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
-                if (GameOver == false)
+                if (GameOver.activeSelf == false)
                 {
                     EventSystem.current.SetSelectedGameObject(null);
                     EventSystem.current.SetSelectedGameObject(PauseFirstButton);
