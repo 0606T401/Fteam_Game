@@ -1,14 +1,15 @@
+
 using UnityEngine;
 
 public class BackToDesktop : MonoBehaviour
 {
-    //ƒQ[ƒ€I—¹:ƒ{ƒ^ƒ“‚©‚çŒÄ‚Ño‚·
+    //ï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½ï¿½:ï¿½{ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½
     public void EndGame()
     {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;//ƒQ[ƒ€ƒvƒŒƒCI—¹
+        UnityEditor.EditorApplication.isPlaying = false;//ï¿½Qï¿½[ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Cï¿½Iï¿½ï¿½
 #else
-    Application.Quit();//ƒQ[ƒ€ƒvƒŒƒCI—¹
+    Application.Quit();//ï¿½Qï¿½[ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Cï¿½Iï¿½ï¿½
 #endif
     }
 }
