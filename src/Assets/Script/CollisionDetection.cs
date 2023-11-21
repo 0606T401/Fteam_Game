@@ -36,7 +36,7 @@ public class CollisionDetection : MonoBehaviour
                 Debug.Log("Hit");
                 data.Hit = true;
                 data.fallspeed = 0f;
-                if (ClearPanel == false)
+                if (ClearPanel.activeSelf == false)
                 {
                     EventSystem.current.SetSelectedGameObject(null);
 
