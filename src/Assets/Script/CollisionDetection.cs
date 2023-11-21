@@ -8,9 +8,11 @@ public class CollisionDetection : MonoBehaviour
     [SerializeField] GameObject Player;
     public Data data;
 
-    public GameObject GameOver;
+    public GameObject GameOver; 
+    public GameObject ClearPanel;
 
     public GameObject pouseFirstbutton;
+
 
     public GoalFlag goal;
     // Start is called before the first frame update
@@ -34,14 +36,15 @@ public class CollisionDetection : MonoBehaviour
                 Debug.Log("Hit");
                 data.Hit = true;
                 data.fallspeed = 0f;
+                if (ClearPanel == false)
+                {
+                    EventSystem.current.SetSelectedGameObject(null);
 
-                EventSystem.current.SetSelectedGameObject(null);
 
+                    EventSystem.current.SetSelectedGameObject(pouseFirstbutton);
 
-                EventSystem.current.SetSelectedGameObject(pouseFirstbutton);
-
-                GameOver.SetActive(true);
-
+                    GameOver.SetActive(true);
+                }
             }
         }
         

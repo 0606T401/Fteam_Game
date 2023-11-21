@@ -10,6 +10,8 @@ public class GoalFlag : MonoBehaviour
     bool GoalArm;
     public bool Goal;
     public GameObject ClearPanel;
+    public GameObject GameOver;
+
     public GameObject PauseFirstButton;
     public Data data;
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class GoalFlag : MonoBehaviour
                 Goal = true;
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
+                if(GameOver == false)
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(PauseFirstButton);
                 ClearPanel.SetActive(true);
