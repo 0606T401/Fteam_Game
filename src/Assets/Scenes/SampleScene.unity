@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 626832833}
   - component: {fileID: 626832837}
   - component: {fileID: 626832838}
+  - component: {fileID: 626832839}
   m_Layer: 0
   m_Name: Sub Camera
   m_TagString: Untagged
@@ -1591,7 +1592,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1606,13 +1607,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6a900ed6b94bf748b733709b2d42820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1514112130}
-  cycleTime: 6.1
+  cycleTime: 7
 --- !u!114 &626832834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,6 +1720,20 @@ MonoBehaviour:
   playerMove: 0.01
   normalFall: {fileID: 0}
   PlayerRotate: 0.1
+--- !u!114 &626832839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626832831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0abccd8f27dae469136391f29495dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _virtualCamera: {fileID: 1514112130}
+  _position: 0
 --- !u!1 &633843985 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4eee086fbcb9e87419f10462c33b3aa4, type: 3}
@@ -2881,7 +2896,7 @@ MonoBehaviour:
   Player: {fileID: 633843985}
   data: {fileID: 764699341}
   GameOver: {fileID: 318030940}
-  ClearPanel: {fileID: 775377234}
+  ClearPanel: {fileID: 0}
   pouseFirstbutton: {fileID: 788720316}
   goal: {fileID: 1112049265}
 --- !u!65 &948441680
@@ -3276,8 +3291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Goal: 0
   ClearPanel: {fileID: 775377234}
-  GameOver: {fileID: 318030940}
-  PauseFirstButton: {fileID: 788720316}
+  GameOver: {fileID: 0}
+  PauseFirstButton: {fileID: 2074246659}
   data: {fileID: 764699341}
 --- !u!135 &1112049266
 SphereCollider:
@@ -4135,7 +4150,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -4237,7 +4252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a200b19ca1a9685429ed7e043c28e904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Resolution: 20
+  m_Resolution: 100
   m_Appearance:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
@@ -4250,11 +4265,13 @@ MonoBehaviour:
     roll: 0
   - position: {x: 4.525788, y: 2, z: -0.6754737}
     roll: 0
-  - position: {x: 4.1120367, y: 4, z: 1.3269894}
+  - position: {x: 4.402483, y: 4, z: 0.8110503}
     roll: 0
-  - position: {x: 2.246715, y: 6, z: 1.8978766}
+  - position: {x: 2.897747, y: 6, z: 1.5104517}
     roll: 0
-  - position: {x: 0.71676415, y: 10, z: -0.49148327}
+  - position: {x: 1.2751318, y: 7.2842712, z: 1.0704452}
+    roll: 0
+  - position: {x: 0.895753, y: 8.5685425, z: -0.09324395}
     roll: 0
 --- !u!4 &1562502124
 Transform:
