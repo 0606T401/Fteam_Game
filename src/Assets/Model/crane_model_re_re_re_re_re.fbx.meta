@@ -3,7 +3,17 @@ guid: 51b53590c8499cb43aadd64e59d2e144
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 85a5f8c05efd43340b3bb16eb9b6ac71, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: uv_crane
+    second: {fileID: 2800000, guid: 9c708ac5af31390438b4dc1ccce47e40, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

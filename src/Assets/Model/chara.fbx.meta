@@ -3,7 +3,67 @@ guid: 4eee086fbcb9e87419f10462c33b3aa4
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: band
+    second: {fileID: 2800000, guid: 6177dbf4e5d8d4a4eacd39a4f8b9fc54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: belt
+    second: {fileID: 2800000, guid: 0ec7bfeda245fb548beab591ebe6a105, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2800000, guid: ad731cb8c5c3e1046958303b109e0ed2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clock_clock_Normal
+    second: {fileID: 2800000, guid: 5f5d01b49e6ae734ea8114e53f1646d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clock_lambert3_Normal
+    second: {fileID: 2800000, guid: 4f69e1d98bd0a9344acbfa1b2bd52047, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clock_needle_Normal
+    second: {fileID: 2800000, guid: 806bf1ee4d4429848bfeea3953f8e16e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: face
+    second: {fileID: 2800000, guid: 67ca585c76310f041a67a579dbf303a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frame
+    second: {fileID: 2800000, guid: 3c616f60928cc03428d1f2e72d9d482f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2800000, guid: 8a496e3a27af8c24e9d7d4b56059b54a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gold
+    second: {fileID: 2800000, guid: 7af0953f095c1de4696a11b2eac07071, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hairr
+    second: {fileID: 2800000, guid: 51e7da8913759c24dbefacefabbe779d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: needle
+    second: {fileID: 2800000, guid: c7d455371226f1743b494ed3c1b6964a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,7 +76,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'RightLowerLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -79,8 +140,327 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: chara1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: character:group2
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: character:group4
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: character:pasted__group1
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: handR
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface16
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface11
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface15
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: chara(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chara1
+      parentName: chara(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bodyR
+      parentName: chara1
+      position: {x: 0.0069240723, y: -0.2859066, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.30360696, y: 0.37777776, z: 0.30360696}
+    - name: bodyL
+      parentName: chara1
+      position: {x: 0.0069240723, y: -0.2859066, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.30360696, y: 0.37777776, z: -0.30360696}
+    - name: handR
+      parentName: chara1
+      position: {x: 0.040907644, y: -0.17481929, z: -0.35030052}
+      rotation: {x: -0.4929527, y: -0, z: 0.0000000052423332, w: 0.87005615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface12
+      parentName: handR
+      position: {x: -0.040907644, y: 0.14749679, z: 0.35030052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface16
+      parentName: polySurface12
+      position: {x: 0.040907647, y: -0.1157912, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface15
+      parentName: polySurface12
+      position: {x: 0.040907647, y: -0.1157912, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface11
+      parentName: handR
+      position: {x: -0.040907644, y: 0.124844514, z: 0.35030052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: handL
+      parentName: chara1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface19
+      parentName: handL
+      position: {x: 0.040907647, y: -0.1431137, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: polySurface20
+      parentName: handL
+      position: {x: 0.040907647, y: -0.1431137, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: polySurface21
+      parentName: handL
+      position: {x: -0, y: -0.049974788, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: character:pCube4
+      parentName: chara1
+      position: {x: 0.22860938, y: 0.49063608, z: -0.25357836}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: character:transform3
+      parentName: character:pCube4
+      position: {x: -0.22860938, y: -0.49063608, z: -0.2521572}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:group
+      parentName: chara1
+      position: {x: -1.0730594, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:pasted__sannmennzu
+      parentName: character:group
+      position: {x: -1.0696157, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.1392307, y: 2.1392307, z: 2.1392307}
+    - name: character:pasted__polySurface2
+      parentName: character:pasted__sannmennzu
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:pPlane3
+      parentName: chara1
+      position: {x: 0.22860938, y: 0.40443432, z: -0.0007105636}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:group1
+      parentName: chara1
+      position: {x: -0.16293746, y: 0.4652204, z: 0.20282876}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9145158, y: 0.9145158, z: 0.9145158}
+    - name: character:group2
+      parentName: chara1
+      position: {x: -0.2211849, y: 0.47484684, z: 0.18859778}
+      rotation: {x: 0.13981333, y: -0.0069906684, z: -0.57698506, w: 0.80466866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:pasted__group1
+      parentName: character:group2
+      position: {x: 0.058247436, y: -0.009626408, z: 0.014230977}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9145158, y: 0.9145158, z: 0.9145158}
+    - name: character:polySurface6
+      parentName: chara1
+      position: {x: -0.11517039, y: 0.43035445, z: -0.00043437956}
+      rotation: {x: 0, y: 0, z: 0.1478689, w: 0.989007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:polySurface7
+      parentName: character:polySurface6
+      position: {x: 0.21504566, y: -0.4261418, z: 0.00043437956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:group4
+      parentName: chara1
+      position: {x: 0.079081506, y: 0.3142491, z: -0.40745142}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:pasted__pCube10
+      parentName: chara1
+      position: {x: 0.037057314, y: 0.33587742, z: -0.43455604}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:pasted__pCube11
+      parentName: chara1
+      position: {x: 0.037057314, y: 0.328992, z: 0.43334687}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: character:pPlane6
+      parentName: chara1
+      position: {x: 0.2254613, y: 0.17951864, z: 0.00095200253}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: character:atamaR1
+      parentName: chara1
+      position: {x: -0.007432206, y: 0.21313792, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clock3
+      parentName: chara(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:handR
+      parentName: clock3
+      position: {x: 0.040907644, y: -0.17481929, z: -0.35030052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:polySurface12
+      parentName: Clock_sholder2:body:handR
+      position: {x: -0.040907644, y: 0.14749679, z: 0.35030052}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:handL
+      parentName: clock3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:pCube4
+      parentName: clock3
+      position: {x: 0.22860938, y: 0.49063608, z: -0.25357836}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: -1}
+    - name: Clock_sholder2:body:character:transform3
+      parentName: Clock_sholder2:body:character:pCube4
+      position: {x: -0.22860938, y: -0.49063608, z: -0.2521572}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:group
+      parentName: clock3
+      position: {x: -1.0730594, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:pasted__sannmennzu
+      parentName: Clock_sholder2:body:character:group
+      position: {x: -1.0696157, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.1392307, y: 2.1392307, z: 2.1392307}
+    - name: Clock_sholder2:body:character:pasted__polySurface2
+      parentName: Clock_sholder2:body:character:pasted__sannmennzu
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:group1
+      parentName: clock3
+      position: {x: -0.16293746, y: 0.4652204, z: 0.20282876}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9145158, y: 0.9145158, z: 0.9145158}
+    - name: Clock_sholder2:body:character:group2
+      parentName: clock3
+      position: {x: -0.2211849, y: 0.47484684, z: 0.18859778}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:pasted__group1
+      parentName: Clock_sholder2:body:character:group2
+      position: {x: 0.058247436, y: -0.009626408, z: 0.014230977}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9145158, y: 0.9145158, z: 0.9145158}
+    - name: Clock_sholder2:body:character:polySurface6
+      parentName: clock3
+      position: {x: -0.11517039, y: 0.43035445, z: -0.00043437956}
+      rotation: {x: 0, y: 0, z: 0.1478689, w: 0.989007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:body:character:group4
+      parentName: clock3
+      position: {x: 0.079081506, y: 0.3142491, z: -0.40745142}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:group1
+      parentName: clock3
+      position: {x: 0.19062391, y: -0.43964767, z: 0}
+      rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 15.898691, y: 15.898691, z: 15.898691}
+    - name: Clock_sholder2:polySurface1
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0071834624, y: 0.018512914, z: -0.001174202}
+      rotation: {x: 0, y: 0.5828678, z: -0, w: 0.812567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:pCylinder3
+      parentName: Clock_sholder2:group1
+      position: {x: -0.00002388954, y: 0.008942623, z: -0.0009045505}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.59064496, y: 0.59064496, z: 0.59064496}
+    - name: Clock_sholder2:pPlane1
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0010305763, y: 0.0070807086, z: 0.000073157615}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 0.16483568, y: 0.16483568, z: 0.16483568}
+    - name: Clock_sholder2:polySurface2
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0064227777, y: 0.021224506, z: -0.0012211084}
+      rotation: {x: 0, y: 0.4423295, z: -0, w: 0.8968527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:pPlane2
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0010305763, y: 0.0070807086, z: 0.000073157615}
+      rotation: {x: -0.26703352, y: 0.65474665, z: 0.65474665, w: -0.26703352}
+      scale: {x: 0.16483568, y: 0.16483568, z: 0.16483568}
+    - name: Clock_sholder2:polySurface3
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0065492773, y: 0.021768996, z: -0.0014826506}
+      rotation: {x: 0, y: 0.0053981096, z: -0, w: 0.99998546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clock_sholder2:pDisc3
+      parentName: Clock_sholder2:group1
+      position: {x: -0.0073808567, y: 0.020381512, z: -0.005006821}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

@@ -95,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7791486788655378091, guid: 51b53590c8499cb43aadd64e59d2e144, type: 3}
+  - {fileID: 2100000, guid: 85a5f8c05efd43340b3bb16eb9b6ac71, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -230,7 +230,9 @@ MonoBehaviour:
   Player: {fileID: 0}
   data: {fileID: 0}
   GameOver: {fileID: 0}
+  ClearPanel: {fileID: 0}
   pouseFirstbutton: {fileID: 0}
+  goal: {fileID: 0}
 --- !u!1 &8811466806354205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +346,9 @@ MonoBehaviour:
   Player: {fileID: 0}
   data: {fileID: 0}
   GameOver: {fileID: 0}
+  ClearPanel: {fileID: 0}
   pouseFirstbutton: {fileID: 0}
+  goal: {fileID: 0}
 --- !u!1 &8811466806701368624
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +882,9 @@ MonoBehaviour:
   Player: {fileID: 0}
   data: {fileID: 0}
   GameOver: {fileID: 0}
+  ClearPanel: {fileID: 0}
   pouseFirstbutton: {fileID: 0}
+  goal: {fileID: 0}
 --- !u!1 &8811466808021201608
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,4 +998,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   data: {fileID: 0}
   GameOver: {fileID: 0}
+  ClearPanel: {fileID: 0}
   pouseFirstbutton: {fileID: 0}
+  goal: {fileID: 0}
