@@ -17,6 +17,7 @@ public class StartTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Time.timeScale = 1;
         if(CountDownTime >= 3)
         {
             StartCoroutine("Stop");
