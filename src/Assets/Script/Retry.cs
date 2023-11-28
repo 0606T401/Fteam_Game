@@ -18,7 +18,7 @@ public class Retry : MonoBehaviour
     }
     public void Continue()
     {
-        Time.timeScale = 1;
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

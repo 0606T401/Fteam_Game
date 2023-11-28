@@ -11,13 +11,13 @@ public class StartTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         if(CountDownTime >= 3)
         {
             StartCoroutine("Stop");
