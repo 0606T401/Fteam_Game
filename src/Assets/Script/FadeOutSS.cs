@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class FadeOutMenu : MonoBehaviour
+public class FadeOutSS : MonoBehaviour
 {
     public GameObject Panelfade;   //フェードパネルの取得
 
@@ -31,7 +31,7 @@ public class FadeOutMenu : MonoBehaviour
 
         if (alpha >= 1)
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("StageSelect");
 
         }
     }
