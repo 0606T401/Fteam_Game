@@ -4800,6 +4800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CountUpTime: 0
   time: {fileID: 1757269201}
+  goal: {fileID: 1112049265}
+  data: {fileID: 764699341}
 --- !u!114 &1757269201
 MonoBehaviour:
   m_ObjectHideFlags: 0
