@@ -22,7 +22,7 @@ public class CountUpTimer : MonoBehaviour
     {
         if (timer.CountDownTime < 0)
         {
-            time.text = string.Format("{0:0}", CountUpTime);
+            time.text = string.Format("{0:0.00}", CountUpTime);
             CountUpTime += Time.deltaTime;
         }
         if (goal.Goal || data.Hit)
