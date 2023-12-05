@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
+    //// InputActionAssetへの参照
+    //[SerializeField] private InputActionReference _moveAction;
+
+
     public float playerMove = 0.01f;
     private StartTimer timer;
 
@@ -17,8 +21,13 @@ public class PlayerMove : MonoBehaviour
     private bool AbuttonDownFlag = false;
     private bool BbuttonDownFlag = false;
     private bool XbuttonDownFlag = false;
+    private bool LTriggerDownFlag = false;
+    private bool RTriggerDownFlag = false;
 
     public float PlayerRotate = 0.5f;
+
+    private float moveX;
+    private float moveY;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +35,22 @@ public class PlayerMove : MonoBehaviour
         timer = GameObject.Find("Timer").GetComponent<StartTimer>();
 
         Player = GameObject.Find("Player");
-
     }
+
+    //private void OnMove(InputValue movement)
+    //{
+    //    var move = movement.Get<Vector2>();
+
+    //    moveX = move.x;
+    //    moveY = move.y;
+    //}
 
     // Update is called once per frame
     void FixedUpdate()
     {
         //  Player.transform.position = (new Vector3(Mathf.Clamp(Player.transform.position.x, -15f.transform.position.x, 15f.transform.position.x), Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, -6f.transform.position.z, 6f.transform.position.z)));
+
+       // print($"move: {moveX}");
 
         //プレイヤーを移動させる
         CharacterController controller = GetComponent<CharacterController>();
@@ -65,6 +83,11 @@ public class PlayerMove : MonoBehaviour
                 {
                     transform.Translate(0, 0, playerMove, Space.World);
                 }
+
+                //// 入力値を元に3軸ベクトルを作成
+                //Vector3 movement = new Vector3(moveX * playerMove, 0.0f, moveY * playerMove);
+
+                //transform.Translate(movement, Space.World);
 
                 //Aボタンを押した時の判定
                 if (Input.GetButton("Abutton") && AbuttonDownFlag == false)
@@ -104,13 +127,27 @@ public class PlayerMove : MonoBehaviour
                 }
 
                 float tri = Input.GetAxis("L_R_Trigger");
-                if (tri == -1)
+                if (tri == -1 && LTriggerDownFlag == false)
                 {
-                    transform.Rotate(0, -PlayerRotate, 0, Space.World);
+                    transform.Rotate(0, -90, 0, Space.World);
+
+                    LTriggerDownFlag = true;
                 }
-                else if (tri == 1)
+                else if (tri == 1 && RTriggerDownFlag == false)
                 {
-                    transform.Rotate(0, PlayerRotate, 0, Space.World);
+                    transform.Rotate(0, 90, 0, Space.World);
+
+                    RTriggerDownFlag = true;
+                }
+
+                if(LTriggerDownFlag == true && tri != -1)
+                {
+                    LTriggerDownFlag = false;
+                }
+
+                if(RTriggerDownFlag == true && tri != 1)
+                {
+                    RTriggerDownFlag= false;
                 }
 
                 if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
