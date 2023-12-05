@@ -2162,11 +2162,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743833426}
   m_CullTransparentMesh: 1
---- !u!198 &750200077 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5598096805120307077, guid: d63616831cb4c944b833948a6a021e96, type: 3}
-  m_PrefabInstance: {fileID: 801814087582881446}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751691958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,7 +2444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784162569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1498088, y: 300.04913, z: -0.09266317}
+  m_LocalPosition: {x: 6.5, y: 300.845, z: -0.09266317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6159,16 +6154,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 568003840498589619, guid: d63616831cb4c944b833948a6a021e96, type: 3}
   m_PrefabInstance: {fileID: 801814087582881446}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &919132149048789270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149048789269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20628c3a4de84aa48bce3f5aa1eb55c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle: {fileID: 750200077}
