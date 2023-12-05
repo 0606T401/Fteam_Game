@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlowArea : MonoBehaviour
 {
-    public float SlowTime = 0.5f;
+    public Data data;
     bool slow = false;
     bool XbuttonFlag = false;
     // Start is called before the first frame update
@@ -28,20 +28,22 @@ public class SlowArea : MonoBehaviour
             if (Input.GetButton("Xbutton") && !slow && !XbuttonFlag) 
             {
                 Debug.Log("Slow");
-                Time.timeScale = SlowTime;
+                data.fallspeed = data.fallspeed / 2;
                 slow = true;
                 XbuttonFlag = true;
             }
-            else if(Input.GetButton("Xbutton") && slow&& !XbuttonFlag)
+            
+            if(Input.GetButton("Xbutton") && slow&& !XbuttonFlag)
             {
                 Debug.Log("Slow cancel");
-                Time.timeScale = 1;
+                data.fallspeed = data.fallspeed * 2;
                 slow = false;
-                XbuttonFlag = true;
+                XbuttonFlag = false;
             }
 
             if (Input.GetButton("Xbutton") == false && XbuttonFlag == true)
             {
+                Debug.Log("FlagCancel");
                 XbuttonFlag = false;
             }
         }
@@ -52,8 +54,11 @@ public class SlowArea : MonoBehaviour
         if (col.gameObject.name == "SlowArea")
         {
             Debug.Log("OutSlowArea");
-            Time.timeScale = 1;
+            if (slow && XbuttonFlag)
+                data.fallspeed = data.fallspeed * 2;
+
             slow = false;
+            XbuttonFlag = false;
         }
     }
 }
