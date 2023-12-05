@@ -32,7 +32,7 @@ public class FadeOutToGame : MonoBehaviour
 
         if (alpha >= 1)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Stage1");
         }
     }
 
