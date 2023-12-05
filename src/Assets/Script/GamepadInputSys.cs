@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class stickInputSystem : MonoBehaviour
+public class GamepadInputSys : MonoBehaviour
 {
     // InputActionAssetÇ÷ÇÃéQè∆
     [SerializeField] private InputActionReference _moveAction;
