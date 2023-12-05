@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
 
-    //// InputActionAssetへの参照
-    //[SerializeField] private InputActionReference _moveAction;
+    // InputActionAssetへの参照
+    [SerializeField] private InputActionReference _moveAction;
 
 
     public float playerMove = 0.01f;
@@ -37,57 +38,79 @@ public class PlayerMove : MonoBehaviour
         Player = GameObject.Find("Player");
     }
 
-    //private void OnMove(InputValue movement)
-    //{
-    //    var move = movement.Get<Vector2>();
 
-    //    moveX = move.x;
-    //    moveY = move.y;
-    //}
+    // コールバックの登録・解除
+    private void Awake()
+    {
+        // 入力値が0以外の値に変化したときに呼び出されるコールバック
+        _moveAction.action.performed += OnMove;
+
+        // 入力値が0に戻ったときに呼び出されるコールバック
+        _moveAction.action.canceled += OnMove;
+    }
+
+    private void OnDestroy()
+    {
+        _moveAction.action.performed -= OnMove;
+        _moveAction.action.canceled -= OnMove;
+    }
+
+    // InputActionの有効化・無効化
+    private void OnEnable() => _moveAction.action.Enable();
+    private void OnDisable() => _moveAction.action.Disable();
+
+    // コールバックの実装
+    private void OnMove(InputAction.CallbackContext context)
+    {
+        // 2軸入力を受け取る
+        var move = context.ReadValue<Vector2>();
+
+        moveX = -move.x;
+        moveY = -move.y;
+
+        // 2軸入力の値を表示
+        print($"move: {move}");
+    }
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //  Player.transform.position = (new Vector3(Mathf.Clamp(Player.transform.position.x, -15f.transform.position.x, 15f.transform.position.x), Player.transform.position.y, Mathf.Clamp(Player.transform.position.z, -6f.transform.position.z, 6f.transform.position.z)));
 
-       // print($"move: {moveX}");
 
         //プレイヤーを移動させる
         CharacterController controller = GetComponent<CharacterController>();
 
         if (timer.CountDownTime <= 0)
         {
-            if (normalFall.playerDistance > 0)
-            {
-                // 左に移動
-                if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
-                {
-                    transform.Translate(playerMove, 0, 0, Space.World);
-                }
+            //if (normalFall.playerDistance > 0)
+            //{
+            //    // 左に移動
+            //    if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
+            //    {
+            //        transform.Translate(playerMove, 0, 0, Space.World);
+            //    }
 
-                // 右に移動
-                if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
-                {
-                    transform.Translate(-playerMove, 0, 0, Space.World);
-                }
+            //    // 右に移動
+            //    if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
+            //    {
+            //        transform.Translate(-playerMove, 0, 0, Space.World);
+            //    }
 
-                // 上に移動
-                if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
-                {
+            //    // 上に移動
+            //    if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
+            //    {
 
-                    transform.Translate(0, 0, -playerMove, Space.World);
-                }
+            //        transform.Translate(0, 0, -playerMove, Space.World);
+            //    }
 
-                // 下に移動
-                if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
-                {
-                    transform.Translate(0, 0, playerMove, Space.World);
-                }
+            //    // 下に移動
+            //    if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
+            //    {
+            //        transform.Translate(0, 0, playerMove, Space.World);
+            //    }
 
-                //// 入力値を元に3軸ベクトルを作成
-                //Vector3 movement = new Vector3(moveX * playerMove, 0.0f, moveY * playerMove);
-
-                //transform.Translate(movement, Space.World);
+                transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
 
                 //Aボタンを押した時の判定
                 if (Input.GetButton("Abutton") && AbuttonDownFlag == false)
@@ -159,4 +182,3 @@ public class PlayerMove : MonoBehaviour
         }
 
     }
-}
