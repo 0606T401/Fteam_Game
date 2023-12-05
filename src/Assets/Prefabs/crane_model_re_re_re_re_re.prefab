@@ -1167,6 +1167,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: frame_hole_emission
       objectReference: {fileID: 0}
+    - target: {fileID: 5094908065112482104, guid: 64757c311eaf1f94d80028003a95491c, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094908065112482104, guid: 64757c311eaf1f94d80028003a95491c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64757c311eaf1f94d80028003a95491c, type: 3}
 --- !u!4 &9141527691738548586 stripped
