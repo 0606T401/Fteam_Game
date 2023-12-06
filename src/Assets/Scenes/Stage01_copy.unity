@@ -2793,7 +2793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveAction: {fileID: 5071328429195791481, guid: 06d3c22da3be80947b6148609d0480d0, type: 3}
   playerMove: 0.01
-  normalFall: {fileID: 919132149048789272}
+  normalFall: {fileID: 919132149048789272, guid: ef5a2e7737ee3634088c666dd6ee7ba5, type: 2}
   PlayerRotate: 0.1
 --- !u!114 &626832839
 MonoBehaviour:
@@ -5561,7 +5561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 568832099882762087, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 568832099882762087, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: m_LocalPosition.x
