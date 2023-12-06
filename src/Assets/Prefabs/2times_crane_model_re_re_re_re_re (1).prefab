@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1939246736881337475}
   - component: {fileID: 2406455674298136178}
   - component: {fileID: 6540903168681635008}
+  - component: {fileID: 7602232281284196235}
   m_Layer: 0
   m_Name: SlowArea
   m_TagString: Untagged
@@ -97,6 +98,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7602232281284196235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252300322735756659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987a376ced14ba249a40f6bbe836a807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frame: {fileID: 3565172591761784591}
+  white: {fileID: 2100000, guid: faa81bd3100035845b7f7e6a7947c8d6, type: 2}
+  orange: {fileID: 2100000, guid: ac4c10c0b9f87f74fbc92115f6f6d888, type: 2}
 --- !u!1 &8432963959207644031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,5 +1220,10 @@ PrefabInstance:
 --- !u!4 &2231982981616836134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64757c311eaf1f94d80028003a95491c, type: 3}
+  m_PrefabInstance: {fileID: 1833846647373724109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3565172591761784591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6338490633473554750, guid: 64757c311eaf1f94d80028003a95491c, type: 3}
   m_PrefabInstance: {fileID: 1833846647373724109}
   m_PrefabAsset: {fileID: 0}
