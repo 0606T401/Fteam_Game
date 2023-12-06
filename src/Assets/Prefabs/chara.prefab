@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 801814088322458083}
   - component: {fileID: 801814088322458080}
   - component: {fileID: 801814088322458090}
-  - component: {fileID: 919132149048789270}
   m_Layer: 0
   m_Name: chara
   m_TagString: Untagged
@@ -166,11 +165,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568003840498589619}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 4eee086fbcb9e87419f10462c33b3aa4, type: 3}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: c2e710ca82524fa4bb53bdedd3df2b85, type: 3}
+  m_Controller: {fileID: 9100000, guid: d1f943e4c2b71204bb5a1237abec1731, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -219,6 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveAction: {fileID: 0}
   playerMove: 0.1
   normalFall: {fileID: 801814088322458080}
   PlayerRotate: 0.5
@@ -235,7 +235,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDistance: 300
-  fallSped: 15
   data: {fileID: 0}
 --- !u!114 &801814088322458090
 MonoBehaviour:
