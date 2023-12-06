@@ -482,6 +482,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 405702682522803348, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: acceleration
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 568832099882762087, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1681,7 +1685,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4208,7 +4212,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -6169,6 +6173,10 @@ PrefabInstance:
       propertyPath: _moveAction
       value: 
       objectReference: {fileID: 5071328429195791481, guid: 06d3c22da3be80947b6148609d0480d0, type: 3}
+    - target: {fileID: 801814088322458090, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 764699341}
     - target: {fileID: 912582381897614601, guid: d63616831cb4c944b833948a6a021e96, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -6255,6 +6263,10 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 405702682522803348, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: acceleration
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 568832099882762087, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: m_RootOrder
       value: 2
