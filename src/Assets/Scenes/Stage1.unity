@@ -1686,7 +1686,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2516,7 +2516,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &788720316
 GameObject:
@@ -3417,7 +3417,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1184765259
 GameObject:
@@ -4212,7 +4212,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -4565,7 +4565,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710215097
 GameObject:
@@ -4937,8 +4937,8 @@ MonoBehaviour:
   data: {fileID: 764699341}
   bestTime: 0
   key: BestTime
-  timerText: {fileID: 0}
-  bestTimerText: {fileID: 0}
+  timerText: {fileID: 1757269201}
+  bestTimerText: {fileID: 290716572}
 --- !u!114 &1757269201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,7 +6224,7 @@ PrefabInstance:
     - target: {fileID: 6506021424295337843, guid: d63616831cb4c944b833948a6a021e96, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: c4c8d96b4fe01c949b42dccc15bf2d48, type: 2}
+      objectReference: {fileID: 9100000, guid: d1f943e4c2b71204bb5a1237abec1731, type: 2}
     - target: {fileID: 6506021424295337843, guid: d63616831cb4c944b833948a6a021e96, type: 3}
       propertyPath: m_CullingMode
       value: 1
