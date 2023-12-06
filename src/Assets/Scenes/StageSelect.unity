@@ -358,7 +358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d90b5bd299104e45a9a721f449502b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countUpTimer: {fileID: 1944249104}
   key: BestTime
   bestTimerText: {fileID: 1768498616}
 --- !u!1 &270865772
@@ -2274,6 +2273,7 @@ GameObject:
   - component: {fileID: 1768498618}
   - component: {fileID: 1768498617}
   - component: {fileID: 1768498616}
+  - component: {fileID: 1768498619}
   m_Layer: 5
   m_Name: BestTime
   m_TagString: Untagged
@@ -2398,6 +2398,20 @@ RectTransform:
   m_AnchoredPosition: {x: -598, y: -160}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1768498619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768498615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d90b5bd299104e45a9a721f449502b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: BestTime
+  bestTimerText: {fileID: 1768498616}
 --- !u!1 &1944249099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,7 +2423,6 @@ GameObject:
   - component: {fileID: 1944249102}
   - component: {fileID: 1944249101}
   - component: {fileID: 1944249103}
-  - component: {fileID: 1944249104}
   - component: {fileID: 1944249105}
   m_Layer: 0
   m_Name: EventSystem
@@ -2463,26 +2476,6 @@ MonoBehaviour:
   Panelfade: {fileID: 463008524}
   fadein: 1
   fadetime: 0.01
---- !u!114 &1944249104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944249099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eda7ab5923a89f443a1b9c1ef22ab991, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CountUpTime: 0
-  time: {fileID: 0}
-  goal: {fileID: 0}
-  data: {fileID: 0}
-  bestTime: 0
-  key: BestTime
-  timerText: {fileID: 0}
-  bestTimerText: {fileID: 0}
 --- !u!114 &1944249105
 MonoBehaviour:
   m_ObjectHideFlags: 0
