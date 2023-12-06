@@ -8,7 +8,7 @@ public class CountUpTimer : MonoBehaviour
     private StartTimer timer;
     public float CountUpTime = 0f;
     public TextMeshProUGUI time;
-    public GoalFlag goal;
+    public GoalCheck goal;
     public Data data;
 
     private float countTime;
@@ -38,10 +38,10 @@ public class CountUpTimer : MonoBehaviour
             countTime += Time.deltaTime;
             timerText.text = countTime.ToString("F2");
         }
-        if (goal.Goal || data.Hit)
+        if (goal.goal || data.Hit)
         {
             Time.timeScale = 0;
-            if (goal.Goal)
+            if (goal.goal)
             {
                 if (CountUpTime < bestTime)//ベストタイムを更新
                 {
