@@ -5,7 +5,7 @@ using TMPro;
 
 public class BestTime1 : MonoBehaviour
 {
-    public CountUpTimer countUpTimer;
+    public float bestTime;
     public string key = "BestTime";
     [SerializeField] TextMeshProUGUI bestTimerText;
 
@@ -18,7 +18,8 @@ public class BestTime1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countUpTimer.bestTime = PlayerPrefs.GetFloat(key, 100);
-        bestTimerText.text = "Best Time : " + countUpTimer.bestTime.ToString("F2");
+        //countUpTimer.bestTime = PlayerPrefs.GetFloat(key, 100);
+        bestTime = PlayerPrefs.GetFloat(key, 100.00f);
+        bestTimerText.text = "Best Time : " + bestTime.ToString("F2");
     }
 }
