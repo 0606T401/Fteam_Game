@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class NormalFall : MonoBehaviour
 {
-    public float playerDistance = 300;
-    public float fallSped = 15;
+    public float playerDistance = 300f;
+    
 
     private StartTimer timer;
     public Data data;

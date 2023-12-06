@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9a83bfd477426074f8303e8057b692ab, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.014350888, g: 0.013469154, b: 0.030090753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -532,6 +532,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+--- !u!198 &117849595 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5598096805120307077, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+  m_PrefabInstance: {fileID: 801814087582881446}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &148907318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1681,7 +1686,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3177,10 +3182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8095c8cd15e2852419665c03862ab770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 1757269201}
-  bestTimerText: {fileID: 1714067017}
-  CountDownTime: 3
-  CountDownTimer: {fileID: 0}
 --- !u!224 &1082406434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3448,7 +3449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDistance: 300
-  fallSped: 15
   data: {fileID: 764699341}
 --- !u!4 &1184765262
 Transform:
@@ -4212,7 +4212,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -4935,6 +4935,10 @@ MonoBehaviour:
   time: {fileID: 1757269201}
   goal: {fileID: 1112049265}
   data: {fileID: 764699341}
+  bestTime: 0
+  key: BestTime
+  timerText: {fileID: 0}
+  bestTimerText: {fileID: 0}
 --- !u!114 &1757269201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6169,6 +6173,10 @@ PrefabInstance:
       propertyPath: _moveAction
       value: 
       objectReference: {fileID: 5071328429195791481, guid: 06d3c22da3be80947b6148609d0480d0, type: 3}
+    - target: {fileID: 801814088322458090, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 764699341}
     - target: {fileID: 912582381897614601, guid: d63616831cb4c944b833948a6a021e96, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -6213,6 +6221,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6506021424295337843, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c4c8d96b4fe01c949b42dccc15bf2d48, type: 2}
+    - target: {fileID: 6506021424295337843, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506021424295337843, guid: d63616831cb4c944b833948a6a021e96, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d63616831cb4c944b833948a6a021e96, type: 3}
 --- !u!1 &919132149048789269 stripped
@@ -6232,7 +6252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20628c3a4de84aa48bce3f5aa1eb55c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 750200077}
+  particle: {fileID: 117849595}
 --- !u!1001 &3016827714210058634
 PrefabInstance:
   m_ObjectHideFlags: 0
