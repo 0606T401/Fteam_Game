@@ -8194,7 +8194,7 @@ MonoBehaviour:
   data: {fileID: 764699341}
   ClearPanel: {fileID: 775377234}
   GameOver: {fileID: 318030940}
-  PauseFirstButton: {fileID: 788720316}
+  PauseFirstButton: {fileID: 2074246659}
 --- !u!1 &1411716831
 GameObject:
   m_ObjectHideFlags: 0
