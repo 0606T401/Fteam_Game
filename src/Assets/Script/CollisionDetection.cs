@@ -14,7 +14,7 @@ public class CollisionDetection : MonoBehaviour
     public GameObject pouseFirstbutton;
 
 
-    public GoalFlag goal;
+    public GoalCheck goal;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class CollisionDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if(!goal.Goal)
+        if(!goal.goal)
         {
             if (col.gameObject.name == "chara")
             {
