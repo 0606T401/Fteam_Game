@@ -14,11 +14,12 @@ public class GoalCheck : MonoBehaviour
     public GameObject GameOver;
 
     public GameObject PauseFirstButton;
-    
+    public AudioClip GoalSound;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class GoalCheck : MonoBehaviour
             if (!goal)
             {
                 goal = true;
+                audioSource.PlayOneShot(GoalSound);
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
                 if (GameOver.activeSelf == false)
