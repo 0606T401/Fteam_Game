@@ -11,7 +11,7 @@ public class CollisionDetection : MonoBehaviour
     public GameObject GameOver; 
     public GameObject ClearPanel;
 
-    public GameObject pouseFirstbutton;
+    public GameObject pauseFirstbutton;
 
 
     public GoalCheck goal;
@@ -41,7 +41,7 @@ public class CollisionDetection : MonoBehaviour
                     EventSystem.current.SetSelectedGameObject(null);
 
 
-                    EventSystem.current.SetSelectedGameObject(pouseFirstbutton);
+                    EventSystem.current.SetSelectedGameObject(pauseFirstbutton);
 
                     GameOver.SetActive(true);
                 }
