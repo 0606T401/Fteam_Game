@@ -28,9 +28,9 @@ public class PauseCheck : MonoBehaviour
     {
         if(pauseFlag.pauseFlag)
         {
-            data.fallspeed = 0f;
             if (GameOver.activeSelf == false || ClearPanel.activeSelf == false)
             {
+                Time.timeScale = 0;
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(PauseFirstbutton);
                 PausePanel.SetActive(true);
