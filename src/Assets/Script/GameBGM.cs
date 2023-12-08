@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Data : MonoBehaviour
+public class GameBGM : MonoBehaviour
 {
-    public bool Hit;
-    bool sound = false;
-    public float fallspeed = 15f;
-
-    public AudioClip GameOver;
+    public Data data;
+    public GoalCheck goal;
+    public AudioClip BGM;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -19,10 +17,9 @@ public class Data : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Hit && !sound) 
+        if(data.Hit||goal.goal)
         {
-            audioSource.PlayOneShot(GameOver);
-            sound = true;
+            audioSource.Pause();
         }
     }
 }

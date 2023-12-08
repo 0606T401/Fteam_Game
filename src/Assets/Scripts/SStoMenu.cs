@@ -15,6 +15,9 @@ public class SStoMenu : MonoBehaviour
     private bool fadeout;          //フェードアウトのフラグ変数
 
     public float fadespeed = 0.1f;
+
+    public AudioClip cancel;
+    AudioSource audioSource;
     // Use this for initialization
     void Start()
     {
@@ -22,6 +25,7 @@ public class SStoMenu : MonoBehaviour
         alpha = fadealpha.color.a;                 //パネルのalpha値を取得
         Panelfade.SetActive(false);
         fadeout = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,6 +33,7 @@ public class SStoMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 1"))
         {
+            audioSource.PlayOneShot(cancel);
             Panelfade.SetActive(true);
             fadeout = true;
         }
@@ -38,6 +43,8 @@ public class SStoMenu : MonoBehaviour
 
         if (alpha >= 1)
         {
+            //audioSource.PlayOneShot(cancel);
+
             SceneManager.LoadScene("Menu");
 
             // カーソル表示
