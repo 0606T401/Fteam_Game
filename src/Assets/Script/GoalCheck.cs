@@ -36,6 +36,7 @@ public class GoalCheck : MonoBehaviour
                     EventSystem.current.SetSelectedGameObject(null);
                     EventSystem.current.SetSelectedGameObject(PauseFirstButton);
                     ClearPanel.SetActive(true);
+                    Debug.Log("hanntei ok");
                 }
             }
         }

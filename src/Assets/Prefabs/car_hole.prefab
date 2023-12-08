@@ -327,7 +327,7 @@ MonoBehaviour:
   arm: {fileID: 7021864463174163707}
   feet: {fileID: 3751004364936350425}
   head: {fileID: 8496554109730803949}
-  acceleration: 5
+  acceleration: 10
   data: {fileID: 0}
 --- !u!1 &639546829506164018
 GameObject:
