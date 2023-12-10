@@ -10,10 +10,14 @@ public class Acceletion : MonoBehaviour
 
     public float acceleration = 5f;
     public Data data;
+
+    public AudioClip Pass;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +32,7 @@ public class Acceletion : MonoBehaviour
             arm.PassArm = false;
             feet.PassFeet = false;
             head.PassHead = false;
+            audioSource.PlayOneShot(Pass);
         }
     }
 }
