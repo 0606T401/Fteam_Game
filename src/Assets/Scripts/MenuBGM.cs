@@ -44,7 +44,7 @@ public class MenuBGM : MonoBehaviour
             Debug.Log("Destroy A");
             AbuttonFlag = true;
         }
-        if (Input.GetButton("joystick button 0") == false && AbuttonFlag == true)
+        if (Input.GetKeyDown("joystick button 0") == false && AbuttonFlag == true)
         {
             Debug.Log("FlagCancel");
             AbuttonFlag = false;
