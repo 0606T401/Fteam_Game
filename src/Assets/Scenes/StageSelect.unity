@@ -1178,7 +1178,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 698621195}
-        m_TargetAssemblyTypeName: FadeOutToGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: FadeOutToGame1, Assembly-CSharp
         m_MethodName: GameStart
         m_Mode: 1
         m_Arguments:
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 698621187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5049b04aface2fe489cea959d9fc8000, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e84eff3c6d0341488464fb474e78261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Panelfade: {fileID: 1563462041}
@@ -1964,6 +1964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DontDestroyEnabled: 1
+  BGM: {fileID: 0}
 --- !u!1 &1161784032
 GameObject:
   m_ObjectHideFlags: 0
