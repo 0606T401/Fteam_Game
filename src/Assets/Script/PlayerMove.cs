@@ -32,6 +32,9 @@ public class PlayerMove : MonoBehaviour
 
     public bool pauseFlag = false;
 
+    public float beforeTimeS = 1;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -178,7 +181,8 @@ public class PlayerMove : MonoBehaviour
                 if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
                 {
                     Debug.Log("START_BACK_button");
-                    pauseFlag = true;
+                beforeTimeS = Time.timeScale;
+                pauseFlag = true;
                 }
 
             }

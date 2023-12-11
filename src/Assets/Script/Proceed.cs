@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Proceed : MonoBehaviour
 {
-    public PlayerMove pauseFlag;
+    public PlayerMove playerMove;
     public PauseCheck PauseCheck;
     public GameObject PausePanel;
 
@@ -22,8 +22,8 @@ public class Proceed : MonoBehaviour
 
     public void Proceeds()
     {
-        pauseFlag.pauseFlag = false;
+        playerMove.pauseFlag = false;
         PausePanel.SetActive(false);
-        Time.timeScale = PauseCheck.beforeTimeS;
+        Time.timeScale = playerMove.beforeTimeS;
     }
 }
