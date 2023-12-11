@@ -37,30 +37,9 @@ public class HowToPlay : MonoBehaviour
                 count++;
                 break;
             case 2:
-                //Fadeoutscript.FadeOut();
                 SceneManager.LoadScene("Menu");
                 break;
 
         }
     }
-
-    //public void TapUpUI()
-    //{
-    //    switch (count)
-    //    {
-    //        case 0:
-    //            ruleimage.sprite = rulesprite[1];//2–‡–Ú‚Ìƒ‹[ƒ‹Ğ‰î‰æ–Ê‚Ö
-    //            count++;
-    //            break;
-    //        case 1:
-    //            ruleimage.sprite = rulesprite[2];//3–‡–Ú‚Ìƒ‹[ƒ‹Ğ‰î‰æ–Ê‚Ö
-    //            count++;
-    //            break;
-    //        case 2:
-    //            Fadeoutscript.FadeOut();
-    //            SceneManager.LoadScene("Menu");
-    //            break;
-
-    //    }
-    //}
 }
