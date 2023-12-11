@@ -40,7 +40,7 @@ public class CountUpTimer : MonoBehaviour
         }
         if (goal.goal || data.Hit)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             if (goal.goal)
             {
                 if (CountUpTime < bestTime1)//ベストタイムを更新

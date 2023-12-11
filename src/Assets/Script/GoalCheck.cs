@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Video;
+using UnityEngine.UI;
 
 public class GoalCheck : MonoBehaviour
 {
@@ -11,7 +13,12 @@ public class GoalCheck : MonoBehaviour
     public bool goal=false;
     public Data data;
     public GameObject ClearPanel;
+    public GameObject ClearMovie;
     public GameObject GameOver;
+    public VideoPlayer ClearMovieSetting;
+    private float time = 0f;
+    [SerializeField] private float ResultTime = 7f;
+    public AudioClip GoalBGM;
 
     public GameObject PauseFirstButton;
     public AudioClip GoalSound;
@@ -27,22 +34,33 @@ public class GoalCheck : MonoBehaviour
     {
         if (arm.PassArm && feet.PassFeet && head.PassHead)
         {
+            time += Time.deltaTime;
+
             if (!goal)
             {
                 goal = true;
                 audioSource.PlayOneShot(GoalSound);
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
-                if (GameOver.activeSelf == false)
-                {
-                    EventSystem.current.SetSelectedGameObject(null);
-                    EventSystem.current.SetSelectedGameObject(PauseFirstButton);
-                    ClearPanel.SetActive(true);
-                    Debug.Log("hanntei ok");
-                }
+
+                audioSource.PlayOneShot(GoalBGM);
+                ClearMovie.SetActive(true);
+                ClearMovieSetting.Play();
+            }
+
+            if (time > ResultTime)
+            {
+                Debug.Log("clear!!");
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(PauseFirstButton);
+                ClearPanel.SetActive(true);
             }
         }
+    }
 
+    void count()
+    {
+        
         
     }
 }
