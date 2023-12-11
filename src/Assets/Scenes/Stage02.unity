@@ -13025,6 +13025,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &919132149048789273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149048789269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441fa0c1687daca418a168096cebb977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxminPosX: 4
+  maxminPosz: 2
 --- !u!1001 &3016827714210058634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13521,7 +13535,7 @@ PrefabInstance:
     - target: {fileID: 7922910466750284341, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: normalFall
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7003867930317409071}
     - target: {fileID: 7922910466750284347, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: data
       value: 
@@ -13553,3 +13567,14 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &7003867930317409071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7749178157794071407, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+  m_PrefabInstance: {fileID: 7003867930317409068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45d21603a717be4e8e90d5ffbf9af6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
