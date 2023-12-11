@@ -3126,7 +3126,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4923,6 +4923,8 @@ MonoBehaviour:
   _moveAction: {fileID: 5071328429195791481, guid: 06d3c22da3be80947b6148609d0480d0, type: 3}
   playerMove: 0.01
   normalFall: {fileID: 919132149048789272, guid: ef5a2e7737ee3634088c666dd6ee7ba5, type: 2}
+  CUTimer: {fileID: 0}
+  CUTimer2: {fileID: 0}
   PlayerRotate: 0.1
   pauseFlag: 0
   beforeTimeS: 1
@@ -11446,6 +11448,7 @@ MonoBehaviour:
   time: {fileID: 1757269201}
   goal: {fileID: 1395726089}
   data: {fileID: 764699341}
+  end: 0
   bestTime1: 0
   key1: BestTime
   timerText: {fileID: 1757269201}
@@ -11564,6 +11567,7 @@ MonoBehaviour:
   time: {fileID: 1757269201}
   goal: {fileID: 1395726089}
   data: {fileID: 764699341}
+  end: 0
   bestTime2: 0
   key2: BestTime2
   timerText: {fileID: 1757269201}
@@ -13844,6 +13848,14 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 7922910466750284341, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: CUTimer
+      value: 
+      objectReference: {fileID: 1757269200}
+    - target: {fileID: 7922910466750284341, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: CUTimer2
+      value: 
+      objectReference: {fileID: 1757269203}
     - target: {fileID: 7922910466750284341, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: normalFall
       value: 

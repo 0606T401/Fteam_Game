@@ -15,6 +15,9 @@ public class PlayerMove : MonoBehaviour
 
     public NormalFall normalFall;
 
+    public CountUpTimer CUTimer;
+    public CountUpTimer2 CUTimer2;
+
     GameObject Player;
 
     private float UpDown;
@@ -114,9 +117,12 @@ public class PlayerMove : MonoBehaviour
             //    {
             //        transform.Translate(0, 0, playerMove, Space.World);
             //    }
-            
+            if (!CUTimer.end || !CUTimer2.end)
+            {
                 transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
-            
+            }
+
+
 
 
             //Aƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½Žž‚Ì”»’è

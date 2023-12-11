@@ -10,7 +10,7 @@ public class CountUpTimer2 : MonoBehaviour
     public TextMeshProUGUI time;
     public GoalCheck goal;
     public Data data;
-    bool end;
+    public bool end;
 
     private float countTime;
     public float bestTime2;
