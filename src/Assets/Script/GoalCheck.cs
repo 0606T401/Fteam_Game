@@ -35,6 +35,7 @@ public class GoalCheck : MonoBehaviour
         if (arm.PassArm && feet.PassFeet && head.PassHead)
         {
             time += Time.deltaTime;
+            
 
             if (!goal)
             {
@@ -56,11 +57,5 @@ public class GoalCheck : MonoBehaviour
                 ClearPanel.SetActive(true);
             }
         }
-    }
-
-    void count()
-    {
-        
-        
     }
 }

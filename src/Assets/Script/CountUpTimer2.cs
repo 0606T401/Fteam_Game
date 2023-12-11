@@ -10,6 +10,7 @@ public class CountUpTimer2 : MonoBehaviour
     public TextMeshProUGUI time;
     public GoalCheck goal;
     public Data data;
+    bool end;
 
     private float countTime;
     public float bestTime2;
@@ -32,15 +33,20 @@ public class CountUpTimer2 : MonoBehaviour
     {
         if (timer.CountDownTime < 0)
         {
-            time.text = string.Format("{0:0.00}", CountUpTime);
-            CountUpTime += Time.deltaTime;
 
-            countTime += Time.deltaTime;
-            timerText.text = countTime.ToString("F2");
+            if (!end)
+            {
+                time.text = string.Format("{0:0.00}", CountUpTime);
+                CountUpTime += Time.deltaTime;
+                countTime += Time.deltaTime;
+                timerText.text = countTime.ToString("F2");
+            }
+
         }
         if (goal.goal || data.Hit)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            end = true;
             if (goal.goal)
             {
                 if (CountUpTime < bestTime2)//ベストタイムを更新

@@ -114,78 +114,80 @@ public class PlayerMove : MonoBehaviour
             //    {
             //        transform.Translate(0, 0, playerMove, Space.World);
             //    }
-
+            
                 transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
+            
 
-                //Aボタンを押した時の判定
-                if (Input.GetButton("Abutton") && AbuttonDownFlag == false)
-                {
-                    transform.Rotate(0, -90, 0);
 
-                    AbuttonDownFlag = true;
-                }
+            //Aボタンを押した時の判定
+            if (Input.GetButton("Abutton") && AbuttonDownFlag == false)
+            {
+                transform.Rotate(0, -90, 0);
 
-                if (AbuttonDownFlag == true && Input.GetButton("Abutton") == false)
-                {
-                    AbuttonDownFlag = false;
-                }
-                //Bボタンを押した時の判定
-                if (Input.GetButton("Bbutton") && BbuttonDownFlag == false)
-                {
-                    Debug.Log("Bbutton");
+                AbuttonDownFlag = true;
+            }
 
-                    BbuttonDownFlag = true;
-                }
-                if (Input.GetButton("Bbutton") == false && BbuttonDownFlag == true)
-                {
-                    BbuttonDownFlag = false;
-                }
+            if (AbuttonDownFlag == true && Input.GetButton("Abutton") == false)
+            {
+                AbuttonDownFlag = false;
+            }
+            //Bボタンを押した時の判定
+            if (Input.GetButton("Bbutton") && BbuttonDownFlag == false)
+            {
+                Debug.Log("Bbutton");
 
-                //Xボタンを押した時の判定
-                if (Input.GetButton("Xbutton") && XbuttonDownFlag == false)
-                {
-                    Debug.Log("Xbutton");
+                BbuttonDownFlag = true;
+            }
+            if (Input.GetButton("Bbutton") == false && BbuttonDownFlag == true)
+            {
+                BbuttonDownFlag = false;
+            }
 
-                    XbuttonDownFlag = true;
-                }
+            //Xボタンを押した時の判定
+            if (Input.GetButton("Xbutton") && XbuttonDownFlag == false)
+            {
+                Debug.Log("Xbutton");
 
-                if (Input.GetButton("Xbutton") == false && XbuttonDownFlag == true)
-                {
-                    XbuttonDownFlag = false;
-                }
+                XbuttonDownFlag = true;
+            }
 
-                float tri = Input.GetAxis("L_R_Trigger");
-                if (tri == -1 && LTriggerDownFlag == false)
-                {
-                    transform.Rotate(0, -90, 0, Space.World);
+            if (Input.GetButton("Xbutton") == false && XbuttonDownFlag == true)
+            {
+                XbuttonDownFlag = false;
+            }
 
-                    LTriggerDownFlag = true;
-                }
-                else if (tri == 1 && RTriggerDownFlag == false)
-                {
-                    transform.Rotate(0, 90, 0, Space.World);
+            float tri = Input.GetAxis("L_R_Trigger");
+            if (tri == -1 && LTriggerDownFlag == false)
+            {
+                transform.Rotate(0, -90, 0, Space.World);
 
-                    RTriggerDownFlag = true;
-                }
+                LTriggerDownFlag = true;
+            }
+            else if (tri == 1 && RTriggerDownFlag == false)
+            {
+                transform.Rotate(0, 90, 0, Space.World);
 
-                if(LTriggerDownFlag == true && tri != -1)
-                {
-                    LTriggerDownFlag = false;
-                }
+                RTriggerDownFlag = true;
+            }
 
-                if(RTriggerDownFlag == true && tri != 1)
-                {
-                    RTriggerDownFlag= false;
-                }
+            if (LTriggerDownFlag == true && tri != -1)
+            {
+                LTriggerDownFlag = false;
+            }
 
-                if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
-                {
-                    Debug.Log("START_BACK_button");
+            if (RTriggerDownFlag == true && tri != 1)
+            {
+                RTriggerDownFlag = false;
+            }
+
+            if (Input.GetButton("STARTbutton") || Input.GetButton("BACKbutton"))
+            {
+                Debug.Log("START_BACK_button");
                 beforeTimeS = Time.timeScale;
                 pauseFlag = true;
-                }
-
             }
-        }
 
+        }
     }
+
+}
