@@ -10397,8 +10397,8 @@ MonoBehaviour:
   time: {fileID: 1757269201}
   goal: {fileID: 1395726089}
   data: {fileID: 764699341}
-  bestTime: 0
-  key: BestTime
+  bestTime1: 0
+  key1: BestTime1
   timerText: {fileID: 1757269201}
   bestTimerText: {fileID: 1714067017}
 --- !u!114 &1757269201

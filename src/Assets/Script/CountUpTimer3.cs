@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class CountUpTimer : MonoBehaviour
+public class CountUpTimer3 : MonoBehaviour
 {
     private StartTimer timer;
     public float CountUpTime = 0f;
@@ -12,8 +12,8 @@ public class CountUpTimer : MonoBehaviour
     public Data data;
 
     private float countTime;
-    public float bestTime1;
-    public string key1 = "BestTime";
+    public float bestTime3;
+    public string key3 = "BestTime";
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] TextMeshProUGUI bestTimerText;
 
@@ -23,8 +23,8 @@ public class CountUpTimer : MonoBehaviour
         timer = GameObject.Find("Timer").GetComponent<StartTimer>();
 
         //PlayerPrefs.DeleteAll();
-        bestTime1 = PlayerPrefs.GetFloat(key1, 100);
-        bestTimerText.text = "Best Time : " + bestTime1.ToString("F2");
+        bestTime3 = PlayerPrefs.GetFloat(key3, 100);
+        bestTimerText.text = "Best Time : " + bestTime3.ToString("F2");
     }
 
     // Update is called once per frame
@@ -43,11 +43,11 @@ public class CountUpTimer : MonoBehaviour
             Time.timeScale = 0;
             if (goal.goal)
             {
-                if (CountUpTime < bestTime1)//ベストタイムを更新
+                if (CountUpTime < bestTime3)//ベストタイムを更新
                 {
-                    bestTime1 = CountUpTime;
-                    PlayerPrefs.SetFloat(key1, bestTime1);
-                    bestTimerText.text = "Best Time : " + bestTime1.ToString("F2");
+                    bestTime3 = CountUpTime;
+                    PlayerPrefs.SetFloat(key3, bestTime3);
+                    bestTimerText.text = "Best Time : " + bestTime3.ToString("F2");
                     PlayerPrefs.Save();
                 }
             }

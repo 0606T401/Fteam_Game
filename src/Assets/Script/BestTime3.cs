@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class BestTime1 : MonoBehaviour
+public class BestTime3 : MonoBehaviour
 {
-    public float bestTime1;
-    public string key1 = "BestTime";
+    public float bestTime3;
+    public string key3 = "BestTime";
     [SerializeField] TextMeshProUGUI bestTimerText;
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class BestTime1 : MonoBehaviour
     void Update()
     {
         //countUpTimer.bestTime = PlayerPrefs.GetFloat(key, 100);
-        bestTime1 = PlayerPrefs.GetFloat(key1, 100.00f);
-        bestTimerText.text = "Best Time : " + bestTime1.ToString("F2");
+        bestTime3 = PlayerPrefs.GetFloat(key3, 100.00f);
+        bestTimerText.text = "Best Time : " + bestTime3.ToString("F2");
     }
 }
