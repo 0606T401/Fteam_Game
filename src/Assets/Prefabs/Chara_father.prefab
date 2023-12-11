@@ -3225,8 +3225,8 @@ GameObject:
   - component: {fileID: 7922910466750284343}
   - component: {fileID: 7922910466750284342}
   - component: {fileID: 7922910466750284341}
+  - component: {fileID: 158377797031737662}
   - component: {fileID: 7922910466750284347}
-  - component: {fileID: 7922910466750284346}
   m_Layer: 0
   m_Name: chara
   m_TagString: Untagged
@@ -3319,6 +3319,21 @@ MonoBehaviour:
   normalFall: {fileID: 0}
   PlayerRotate: 0.5
   pauseFlag: 0
+  beforeTimeS: 1
+--- !u!114 &158377797031737662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7922910466750284345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441fa0c1687daca418a168096cebb977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxminPosX: 7
+  maxminPosz: 2
 --- !u!114 &7922910466750284347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,16 +3347,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 0}
---- !u!114 &7922910466750284346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7922910466750284345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20628c3a4de84aa48bce3f5aa1eb55c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle: {fileID: 0}
