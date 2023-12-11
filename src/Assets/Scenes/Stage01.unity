@@ -3791,6 +3791,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 775377234}
     - target: {fileID: 2458766639198725960, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: pauseFirstbutton
+      value: 
+      objectReference: {fileID: 788720316}
+    - target: {fileID: 2458766639198725960, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
@@ -3815,6 +3819,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 775377234}
     - target: {fileID: 3136189231319382351, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: pauseFirstbutton
+      value: 
+      objectReference: {fileID: 788720316}
+    - target: {fileID: 3136189231319382351, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
@@ -3839,6 +3847,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 775377234}
     - target: {fileID: 3540085833267491457, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: pauseFirstbutton
+      value: 
+      objectReference: {fileID: 788720316}
+    - target: {fileID: 3540085833267491457, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
@@ -3862,6 +3874,10 @@ PrefabInstance:
       propertyPath: ClearPanel
       value: 
       objectReference: {fileID: 775377234}
+    - target: {fileID: 7536559230114019102, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: pauseFirstbutton
+      value: 
+      objectReference: {fileID: 788720316}
     - target: {fileID: 7536559230114019102, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pouseFirstbutton
       value: 
