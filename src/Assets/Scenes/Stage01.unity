@@ -4584,7 +4584,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4714,6 +4714,7 @@ MonoBehaviour:
   normalFall: {fileID: 919132149048789272, guid: ef5a2e7737ee3634088c666dd6ee7ba5, type: 2}
   PlayerRotate: 0.1
   pauseFlag: 0
+  beforeTimeS: 1
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6622,9 +6623,7 @@ MonoBehaviour:
   ClearPanel: {fileID: 775377234}
   PausePanel: {fileID: 1770067022}
   pauseFlag: {fileID: 7003867930317409069}
-  data: {fileID: 764699341}
   PauseFirstbutton: {fileID: 1806463257}
-  beforeTimeS: 1
 --- !u!4 &969682936
 Transform:
   m_ObjectHideFlags: 0
@@ -9676,7 +9675,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -11279,7 +11278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389286212eb142c4cb6b8f977f3dbcf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseFlag: {fileID: 7003867930317409069}
+  playerMove: {fileID: 7003867930317409069}
   PauseCheck: {fileID: 969682935}
   PausePanel: {fileID: 1770067022}
 --- !u!114 &1806463260

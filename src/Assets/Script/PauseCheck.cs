@@ -12,11 +12,8 @@ public class PauseCheck : MonoBehaviour
     public GameObject PausePanel;
 
     public PlayerMove pauseFlag;
-    public Data data;
 
     public GameObject PauseFirstbutton;
-
-    public float beforeTimeS = 1;
 
 
     // Start is called before the first frame update
@@ -32,7 +29,6 @@ public class PauseCheck : MonoBehaviour
         {
             if (GameOver.activeSelf == false || ClearPanel.activeSelf == false)
             {
-                beforeTimeS = Time.timeScale;
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(PauseFirstbutton);
                 PausePanel.SetActive(true);
