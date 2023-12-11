@@ -16,20 +16,23 @@ public class PauseCheck : MonoBehaviour
 
     public GameObject PauseFirstbutton;
 
+    public float beforeTimeS = 1;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(pauseFlag.pauseFlag)
+        if (pauseFlag.pauseFlag)
         {
             if (GameOver.activeSelf == false || ClearPanel.activeSelf == false)
             {
+                beforeTimeS = Time.timeScale;
                 Time.timeScale = 0;
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(PauseFirstbutton);
