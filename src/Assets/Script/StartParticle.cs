@@ -9,25 +9,76 @@ public class StartParticle : MonoBehaviour
     //変数の定義
     [SerializeField] private ParticleSystem particle;
 
+    List<GameObject> colList = new List<GameObject>();
+
     void Start()
     {
-        //Particleシステムの取得（子オブジェクトから）
-        particle = GetComponentInChildren<ParticleSystem>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        int colListCnt1 = 0;
+        foreach (GameObject go in colList)
+        {
+            if (go.gameObject.name == "FeetPoint")
+            {
+                colListCnt1++;
+            }
 
+            if (go.gameObject.name == "ArmPoint")
+            {
+                colListCnt1++;
+            }
+
+            if (go.gameObject.name == "HeadPoint")
+            {
+                colListCnt1++;
+            }
+
+
+            if (colListCnt1 >= 3)
+            {
+                particle.Play();
+            }
+        }
     }
 
     //衝突が発生した場合に実行される
-    void OnTriggerEnter (Collider collision)
+    void OnTriggerEnter(Collider collision)
     {
-        //衝突対象のタグが"ParticlePoint"の場合にparticleをPlayする
-        if (collision.gameObject.tag == "ParticlePoint")
+        if (collision.gameObject.name == "FeetPoint")
         {
-            particle.Play();
+            colList.Add(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "ArmPoint")
+        {
+            colList.Add(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "HeadPoint")
+        {
+            colList.Add(collision.gameObject);
+        }
+    }
+
+    void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.name == "FeetPoint")
+        {
+            colList.Remove(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "ArmPoint")
+        {
+            colList.Remove(collision.gameObject);
+        }
+
+        if (collision.gameObject.name == "HeadPoint")
+        {
+            colList.Remove(collision.gameObject);
         }
     }
 }
