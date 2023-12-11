@@ -33,10 +33,10 @@ public class PauseCheck : MonoBehaviour
             if (GameOver.activeSelf == false || ClearPanel.activeSelf == false)
             {
                 beforeTimeS = Time.timeScale;
-                Time.timeScale = 0;
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(PauseFirstbutton);
                 PausePanel.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
