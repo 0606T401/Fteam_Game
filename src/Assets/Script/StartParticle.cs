@@ -7,7 +7,7 @@ public class StartParticle : MonoBehaviour
     // Start is called before the first frame update
 
     //•Ï”‚Ì’è‹`
-    [SerializeField] private ParticleSystem particle;
+    public ParticleSystem particle;
 
     List<GameObject> colList = new List<GameObject>();
 
@@ -24,21 +24,20 @@ public class StartParticle : MonoBehaviour
         {
             if (go.gameObject.name == "FeetPoint")
             {
-                colListCnt1++;
+                colListCnt1+=1;
             }
 
             if (go.gameObject.name == "ArmPoint")
             {
-                colListCnt1++;
+                colListCnt1+=1;
             }
 
             if (go.gameObject.name == "HeadPoint")
             {
-                colListCnt1++;
+                colListCnt1+=1;
             }
 
-
-            if (colListCnt1 >= 3)
+            if (colListCnt1 > 2)
             {
                 particle.Play();
             }

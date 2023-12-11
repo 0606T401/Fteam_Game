@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class HowToPlay : MonoBehaviour
 {
-    public FadeOutScript Fadeoutscript;
+    //public FadeOutScript Fadeoutscript;
     private Image ruleimage;
     public Sprite[] rulesprite;
     int count;
