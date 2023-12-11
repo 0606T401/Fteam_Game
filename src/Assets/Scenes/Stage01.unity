@@ -8917,7 +8917,6 @@ MonoBehaviour:
   ClearMovie: {fileID: 1882941158}
   GameOver: {fileID: 318030940}
   ClearMovieSetting: {fileID: 1932980858}
-  time: 0
   ResultTime: 7
   GoalBGM: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
   PauseFirstButton: {fileID: 2074246659}
@@ -11175,7 +11174,7 @@ RectTransform:
   - {fileID: 1356308445}
   - {fileID: 1806463258}
   m_Father: {fileID: 1809426486}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12310,7 +12309,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1932980860
 AudioSource:

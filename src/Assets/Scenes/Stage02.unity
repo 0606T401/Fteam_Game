@@ -3124,8 +3124,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -9365,6 +9365,7 @@ MonoBehaviour:
   GameOver: {fileID: 318030940}
   ClearMovieSetting: {fileID: 428674332}
   ResultTime: 7
+  GoalBGM: {fileID: 0}
   PauseFirstButton: {fileID: 2074246659}
   GoalSound: {fileID: 8300000, guid: 8c01fa2b8e6c98f4bbe01e72a0d36a08, type: 3}
 --- !u!82 &1395726090
@@ -11285,7 +11286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727640089
 GameObject:
