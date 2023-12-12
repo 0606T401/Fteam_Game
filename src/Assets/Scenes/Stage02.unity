@@ -1327,7 +1327,7 @@ PrefabInstance:
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pauseFirstbutton
       value: 
-      objectReference: {fileID: 2074246659}
+      objectReference: {fileID: 788720316}
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pouseFirstbutton
       value: 
@@ -1359,7 +1359,7 @@ PrefabInstance:
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pauseFirstbutton
       value: 
-      objectReference: {fileID: 2074246659}
+      objectReference: {fileID: 788720316}
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pouseFirstbutton
       value: 
@@ -1403,7 +1403,7 @@ PrefabInstance:
     - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pauseFirstbutton
       value: 
-      objectReference: {fileID: 2074246659}
+      objectReference: {fileID: 788720316}
     - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pouseFirstbutton
       value: 
@@ -1439,7 +1439,7 @@ PrefabInstance:
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pauseFirstbutton
       value: 
-      objectReference: {fileID: 2074246659}
+      objectReference: {fileID: 788720316}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pouseFirstbutton
       value: 

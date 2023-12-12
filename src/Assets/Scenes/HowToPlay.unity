@@ -206,9 +206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fadeoutscript: {fileID: 0}
   rulesprite:
+  - {fileID: 21300000, guid: 8923e861e89587c428a4f1c357bc3aa9, type: 3}
+  - {fileID: 21300000, guid: 6e0b3a61cfe0b224a82cb3264339a1a4, type: 3}
   - {fileID: 21300000, guid: 2627a67f664322d4985faca69ab04d4d, type: 3}
-  - {fileID: 21300000, guid: 2a01bd0c984ff35498ef81fd93db5d4e, type: 3}
-  - {fileID: 21300000, guid: 4c483fec43d6e3049957102ab13d0820, type: 3}
 --- !u!114 &448165341
 MonoBehaviour:
   m_ObjectHideFlags: 0
