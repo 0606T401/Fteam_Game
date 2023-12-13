@@ -23,6 +23,9 @@ public class GoalCheck : MonoBehaviour
     public GameObject PauseFirstButton;
     public AudioClip GoalSound;
     AudioSource audioSource;
+
+    [SerializeField] public ParticleSystem sideParticle;
+    [SerializeField] public ParticleSystem bottomParticle;
     // Start is called before the first frame update
     void Start()
     {
