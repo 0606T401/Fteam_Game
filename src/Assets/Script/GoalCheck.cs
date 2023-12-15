@@ -18,18 +18,20 @@ public class GoalCheck : MonoBehaviour
     public VideoPlayer ClearMovieSetting;
     private float time = 0f;
     [SerializeField] private float ResultTime = 7f;
-    public AudioClip GoalBGM;
-
     public GameObject PauseFirstButton;
-    public AudioClip GoalSound;
-    AudioSource audioSource;
+    
+    public AudioSource GoalBGM;
+    public AudioSource GoalSound;
+    [SerializeField] private AudioClip goalBGM;
+    [SerializeField] private AudioClip goalSound;
+    
 
     [SerializeField] public ParticleSystem sideParticle;
     [SerializeField] public ParticleSystem bottomParticle;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -43,11 +45,11 @@ public class GoalCheck : MonoBehaviour
             if (!goal)
             {
                 goal = true;
-                audioSource.PlayOneShot(GoalSound);
+                goalSE();
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
 
-                audioSource.PlayOneShot(GoalBGM);
+                goalMusic();
                 ClearMovie.SetActive(true);
                 ClearMovieSetting.Play();
             }
@@ -60,5 +62,14 @@ public class GoalCheck : MonoBehaviour
                 ClearPanel.SetActive(true);
             }
         }
+    }
+
+    void goalSE()
+    {
+        GoalSound.PlayOneShot(goalSound);
+    }
+    void goalMusic()
+    {
+        GoalBGM.PlayOneShot(goalBGM);
     }
 }
