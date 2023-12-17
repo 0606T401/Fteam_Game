@@ -19,7 +19,8 @@ public class GoalCheck : MonoBehaviour
     private float time = 0f;
     [SerializeField] private float ResultTime = 7f;
     public GameObject PauseFirstButton;
-    
+    public GameObject StageSelectButton;
+
     public AudioSource GoalBGM;
     public AudioSource GoalSound;
     [SerializeField] private AudioClip goalBGM;
@@ -49,7 +50,8 @@ public class GoalCheck : MonoBehaviour
                 Debug.Log("Goal ok");
                 data.fallspeed = 0f;
 
-                goalMusic();
+                goalMusic(); 
+                
                 ClearMovie.SetActive(true);
                 ClearMovieSetting.Play();
             }
@@ -57,9 +59,12 @@ public class GoalCheck : MonoBehaviour
             if (time > ResultTime)
             {
                 Debug.Log("clear!!");
+                
+                
                 EventSystem.current.SetSelectedGameObject(null);
-                EventSystem.current.SetSelectedGameObject(PauseFirstButton);
                 ClearPanel.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(PauseFirstButton);
+                EventSystem.current.SetSelectedGameObject(StageSelectButton);
             }
         }
     }

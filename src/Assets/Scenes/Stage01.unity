@@ -8922,6 +8922,7 @@ MonoBehaviour:
   ClearMovieSetting: {fileID: 1932980858}
   ResultTime: 7
   PauseFirstButton: {fileID: 2074246659}
+  StageSelectButton: {fileID: 14348725}
   GoalBGM: {fileID: 1395726091}
   GoalSound: {fileID: 1395726090}
   goalBGM: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
