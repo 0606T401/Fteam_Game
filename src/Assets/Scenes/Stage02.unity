@@ -9342,7 +9342,6 @@ MonoBehaviour:
   ClearMovieSetting: {fileID: 428674332}
   ResultTime: 7
   PauseFirstButton: {fileID: 2074246659}
-  StageSelectButton: {fileID: 14348725}
   GoalBGM: {fileID: 1395726091}
   GoalSound: {fileID: 1395726090}
   goalBGM: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
@@ -11996,34 +11995,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3326476520918651966, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 8233641961098153581, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 764699341}
-    - target: {fileID: 8233641961098153581, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 919132149048789269}
-    - target: {fileID: 8233641961098153581, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: GameOver
-      value: 
-      objectReference: {fileID: 318030940}
-    - target: {fileID: 8233641961098153581, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: ClearPanel
-      value: 
-      objectReference: {fileID: 775377234}
     - target: {fileID: 8541630510967844080, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: m_Name
       value: crane_model_re_re_re_re_re (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8811466806239774213, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: data
       value: 
@@ -12048,14 +12023,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466806239774215, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466806354205268, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: data
       value: 
@@ -12080,22 +12047,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466806354205270, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466806701368628, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 8811466806780263182, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 8811466807376419097, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8811466807486819749, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: data
       value: 
@@ -12124,18 +12075,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466807940852017, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466807940852023, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 8811466808021201612, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: data
       value: 
@@ -12158,10 +12097,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 8811466808021201614, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     - target: {fileID: 9061848406306076234, guid: 588b66ee2607af14490611bdc5d7f4b9, type: 3}

@@ -597,10 +597,6 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
-    - target: {fileID: 405702682522803348, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
-      propertyPath: acceleration
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 568832099882762087, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -673,10 +669,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 2458766639198725960, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
     - target: {fileID: 3136189231319382351, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: data
       value: 
@@ -699,10 +691,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 3136189231319382351, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 3136189231319382351, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     - target: {fileID: 3540085833267491457, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
@@ -729,10 +717,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 3540085833267491457, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
     - target: {fileID: 7536559230114019102, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: data
       value: 
@@ -755,10 +739,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 7536559230114019102, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 7536559230114019102, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     m_RemovedComponents: []
@@ -2881,107 +2861,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &425383551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2126878295166162196, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-  m_PrefabInstance: {fileID: 2122936526}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &425383553
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425383551}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1062dcec76dcedd4b9ba6e77e3a64cc7, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &442887118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,7 +4463,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6815,10 +6694,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 9905610724745580, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
     - target: {fileID: 1377137685344318629, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: data
       value: 
@@ -6841,10 +6716,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 1377137685344318629, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 1377137685344318629, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     - target: {fileID: 1911253762810800802, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
@@ -6871,22 +6742,10 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 1911253762810800802, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 3792734737617178489, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: Pass
-      value: 
-      objectReference: {fileID: 8300000, guid: 1062dcec76dcedd4b9ba6e77e3a64cc7, type: 3}
     - target: {fileID: 3792734737617178489, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
-    - target: {fileID: 3792734737617178489, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: acceleration
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3956198492470045834, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6957,10 +6816,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 6455035846271050995, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 6455035846271050995, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     m_RemovedComponents: []
@@ -8922,7 +8777,6 @@ MonoBehaviour:
   ClearMovieSetting: {fileID: 1932980858}
   ResultTime: 7
   PauseFirstButton: {fileID: 2074246659}
-  StageSelectButton: {fileID: 14348725}
   GoalBGM: {fileID: 1395726091}
   GoalSound: {fileID: 1395726090}
   goalBGM: {fileID: 8300000, guid: 41b037e3d67d1e540b3bfd935fdf40ee, type: 3}
@@ -9783,7 +9637,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -12415,107 +12269,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1932989284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4117290552176352792, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
-  m_PrefabInstance: {fileID: 1065672005}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1932989286
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1932989284}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1062dcec76dcedd4b9ba6e77e3a64cc7, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1988486162
 GameObject:
   m_ObjectHideFlags: 0
@@ -13242,17 +12995,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1154396349578462325, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: Pass
-      value: 
-      objectReference: {fileID: 8300000, guid: 1062dcec76dcedd4b9ba6e77e3a64cc7, type: 3}
-    - target: {fileID: 1154396349578462325, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
-    - target: {fileID: 1154396349578462325, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: acceleration
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1315192835259623302, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -13297,26 +13042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1411380917700113250, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 1608883612737543154, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 1804624340599815484, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: m_Name
       value: 2times_car_hole
       objectReference: {fileID: 0}
-    - target: {fileID: 2454435823646791202, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 69.187706
-      objectReference: {fileID: 0}
-    - target: {fileID: 2454435823646791202, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -93
-      objectReference: {fileID: 0}
     - target: {fileID: 2631382437122091616, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
@@ -13341,14 +13070,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 2631382437122091616, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 3742350925987474494, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 4015854167398907817, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
@@ -13373,14 +13094,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 4015854167398907817, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 4094427843186181948, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 4477033575172170158, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
@@ -13405,42 +13118,6 @@ PrefabInstance:
       propertyPath: pauseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
-    - target: {fileID: 4477033575172170158, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: pouseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 4504438333575654933, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 5095090230019513075, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 5274000609161599713, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-    - target: {fileID: 6489638637407677363, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489638637407677363, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529263740885116228, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 64.23924
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529263740885116228, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 123
-      objectReference: {fileID: 0}
-    - target: {fileID: 8682065002988556668, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 9021653012974874623, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
@@ -13463,10 +13140,6 @@ PrefabInstance:
       objectReference: {fileID: 775377234}
     - target: {fileID: 9021653012974874623, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: pauseFirstbutton
-      value: 
-      objectReference: {fileID: 788720316}
-    - target: {fileID: 9021653012974874623, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
-      propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
     m_RemovedComponents: []
