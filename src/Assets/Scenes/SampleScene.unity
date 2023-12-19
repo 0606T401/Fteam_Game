@@ -156,8 +156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811de517ae0cbe843afd318fdcdf2293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockDistance: 100
-  MoveSpeed: 15
+  blockDistanceX: -100
+  blockDistanceY: -100
+  blockDistanceZ: -100
+  MoveSeconds: 5
 --- !u!54 &129482665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -290,8 +292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811de517ae0cbe843afd318fdcdf2293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockDistance: -100
-  MoveSpeed: -15
+  blockDistanceX: 100
+  blockDistanceY: -100
+  blockDistanceZ: -100
+  MoveSeconds: 5
 --- !u!54 &368205819
 Rigidbody:
   m_ObjectHideFlags: 0
