@@ -1342,6 +1342,14 @@ PrefabInstance:
       propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
+    - target: {fileID: 8260188214049713601, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: m_Size.y
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260188214049713601, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: m_Center.y
+      value: 700
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
 --- !u!1 &180407655
@@ -2170,6 +2178,14 @@ PrefabInstance:
       propertyPath: pouseFirstbutton
       value: 
       objectReference: {fileID: 788720316}
+    - target: {fileID: 8260188214049713601, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: m_Size.y
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260188214049713601, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
+      propertyPath: m_Center.y
+      value: 700
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a3dae18aeba0d4b8755b9c74f2d75b, type: 3}
 --- !u!1 &308213509
@@ -4463,7 +4479,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6670,6 +6686,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 411683693, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
+      propertyPath: m_Size.y
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 411683693, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
+      propertyPath: m_Center.y
+      value: 700
+      objectReference: {fileID: 0}
     - target: {fileID: 9905610724745580, guid: d2accf103c6c6c1469b3d952130f2a04, type: 3}
       propertyPath: data
       value: 
@@ -6959,7 +6983,7 @@ MonoBehaviour:
   data: {fileID: 764699341}
   GameOver: {fileID: 318030940}
   ClearPanel: {fileID: 775377234}
-  pauseFirstbutton: {fileID: 788720316}
+  pauseFirstbutton: {fileID: 2074246659}
   goal: {fileID: 1395726089}
 --- !u!65 &1066842798
 BoxCollider:
@@ -9637,7 +9661,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.018727235, y: -0.16551045, z: 0.003143483, w: 0.9860252}
+  m_LocalRotation: {x: 0.018727224, y: -0.16551045, z: 0.0031434812, w: 0.9860252}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -12994,6 +13018,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 260778010, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
+      propertyPath: m_Size.y
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 260778010, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
+      propertyPath: m_Center.y
+      value: 790
+      objectReference: {fileID: 0}
     - target: {fileID: 1154396349578462325, guid: f98a78dc096fb284c9c8bafb51152f4b, type: 3}
       propertyPath: data
       value: 
