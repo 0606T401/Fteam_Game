@@ -38,7 +38,7 @@ public class SlowArea : MonoBehaviour
                 Debug.Log("Slow cancel");
                 data.fallspeed = data.fallspeed * 2;
                 slow = false;
-                XbuttonFlag = false;
+                XbuttonFlag = true;
             }
 
             if (Input.GetButton("Xbutton") == false && XbuttonFlag == true)
