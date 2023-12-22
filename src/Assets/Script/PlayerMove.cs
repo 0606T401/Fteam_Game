@@ -125,19 +125,19 @@ public class PlayerMove : MonoBehaviour
             {
                 if (FPCamera.activeSelf == true)
                 {
-                    if (transform.eulerAngles.y == 0)
+                    if (transform.eulerAngles.y == 180)
                     {
                         transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
                     }
-                    else if (transform.eulerAngles.y == 90)
+                    else if (transform.eulerAngles.y == 270)
                     {
                         transform.Translate(moveY * playerMove, 0, -moveX * playerMove, Space.World);
                     }
-                    else if (transform.eulerAngles.y == 180 || transform.eulerAngles.y == -180)
+                    else if (transform.eulerAngles.y == 360 || transform.eulerAngles.y == 0)
                     {
                         transform.Translate(-moveX * playerMove, 0, -moveY * playerMove, Space.World);
                     }
-                    else if (transform.eulerAngles.y == -90 || transform.eulerAngles.y == 270)
+                    else if (transform.eulerAngles.y == 90 || transform.eulerAngles.y == 450)
                     {
                         transform.Translate(-moveY * playerMove, 0, moveX * playerMove, Space.World);
                     }
