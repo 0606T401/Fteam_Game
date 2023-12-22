@@ -13319,6 +13319,26 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: CUTimer
       value: 
