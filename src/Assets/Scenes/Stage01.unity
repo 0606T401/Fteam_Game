@@ -4684,6 +4684,7 @@ MonoBehaviour:
   PlayerRotate: 0.1
   pauseFlag: 0
   beforeTimeS: 1
+  FPCamera: {fileID: 0}
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13378,6 +13379,10 @@ PrefabInstance:
       propertyPath: CUTimer
       value: 
       objectReference: {fileID: 1757269200}
+    - target: {fileID: 1556411180, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1225454661}
     - target: {fileID: 7003867929965126909, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: m_Name
       value: Chara_father

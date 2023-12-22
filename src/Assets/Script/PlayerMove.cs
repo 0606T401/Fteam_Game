@@ -37,6 +37,7 @@ public class PlayerMove : MonoBehaviour
 
     public float beforeTimeS = 1;
 
+    [SerializeField] GameObject FPCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -117,9 +118,32 @@ public class PlayerMove : MonoBehaviour
             //    {
             //        transform.Translate(0, 0, playerMove, Space.World);
             //    }
+
+
+
             if (!CUTimer.end || !CUTimer2.end)
             {
-                transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
+                if (FPCamera.activeSelf == true)
+                {
+                    if (transform.eulerAngles.y == 0)
+                    {
+                        transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
+                    }
+                    else if (transform.eulerAngles.y == 90)
+                    {
+                        transform.Translate(moveY * playerMove, 0, -moveX * playerMove, Space.World);
+                    }
+                    else if (transform.eulerAngles.y == 180 || transform.eulerAngles.y == -180)
+                    {
+                        transform.Translate(-moveX * playerMove, 0, -moveY * playerMove, Space.World);
+                    }
+                    else if (transform.eulerAngles.y == -90 || transform.eulerAngles.y == 270)
+                    {
+                        transform.Translate(-moveY * playerMove, 0, moveX * playerMove, Space.World);
+                    }
+                }
+                else
+                    transform.Translate(moveX * playerMove, 0, moveY * playerMove, Space.World);
             }
 
 

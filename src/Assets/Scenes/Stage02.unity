@@ -4690,7 +4690,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.010292211, y: -0.16765675, z: 0.0017504317, w: 0.9857902}
+  m_LocalRotation: {x: 0.010292194, y: -0.16765675, z: 0.0017504289, w: 0.9857902}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4823,6 +4823,7 @@ MonoBehaviour:
   PlayerRotate: 0.1
   pauseFlag: 0
   beforeTimeS: 1
+  FPCamera: {fileID: 0}
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10161,7 +10162,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.010292211, y: -0.16765675, z: 0.0017504317, w: 0.9857902}
+  m_LocalRotation: {x: 0.010292194, y: -0.16765675, z: 0.0017504289, w: 0.9857902}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -13540,6 +13541,10 @@ PrefabInstance:
       propertyPath: CUTimer2
       value: 
       objectReference: {fileID: 1757269203}
+    - target: {fileID: 1556411180, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1418308934}
     - target: {fileID: 1556411182, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: m_UseGravity
       value: 0
