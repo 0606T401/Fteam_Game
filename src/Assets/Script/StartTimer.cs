@@ -7,11 +7,15 @@ public class StartTimer : MonoBehaviour
 {
     
     public float CountDownTime = 3f;
-    public TextMeshProUGUI CountDownTimer;
+    [SerializeField] GameObject count3;
+    [SerializeField] GameObject count2;
+    [SerializeField] GameObject count1;
+    [SerializeField] GameObject go;
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
+        
     }
 
     // Update is called once per frame
@@ -23,15 +27,24 @@ public class StartTimer : MonoBehaviour
             StartCoroutine("Stop");
             CountDownTime -= Time.deltaTime;
         }
-        if (CountDownTime > 0)
+        if (CountDownTime > 2 )
         {
-            CountDownTimer.text = string.Format("{0:0}", CountDownTime);
+            count3.SetActive(true);
+        }
+        if (CountDownTime > 1 && CountDownTime < 2)
+        {
+            count3.SetActive(false);
+            count2.SetActive(true);
+        }
+        if (CountDownTime > 0 && CountDownTime < 1)
+        {
+            count2.SetActive(false);
+            count1.SetActive(true);
         }
         if (CountDownTime < 0 && CountDownTime >= -1.0f) 
         {
-            CountDownTimer.text = string.Format("GO!");
-            StartCoroutine("after_one_second");
             
+            StartCoroutine("after_one_second");
         }
         CountDownTime -= Time.deltaTime;
 
@@ -42,8 +55,10 @@ public class StartTimer : MonoBehaviour
 
     IEnumerator after_one_second()
     {
+        count1.SetActive(false);
+        go.SetActive(true);
         yield return new WaitForSeconds(1.0f);
-        CountDownTimer.text = string.Format("");
+        go.SetActive(false);
     }
 
     IEnumerator Stop()
