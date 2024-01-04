@@ -11141,7 +11141,7 @@ MonoBehaviour:
   GameOver: {fileID: 318030940}
   ClearPanel: {fileID: 775377234}
   PausePanel: {fileID: 1145024946}
-  pauseFlag: {fileID: 626832838}
+  pauseFlag: {fileID: 7003867930317409069}
   PauseFirstbutton: {fileID: 560499986}
 --- !u!4 &1724067669
 Transform:
@@ -13594,3 +13594,14 @@ PrefabInstance:
       objectReference: {fileID: 764699341}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+--- !u!114 &7003867930317409069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+  m_PrefabInstance: {fileID: 7003867930317409068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577245055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
