@@ -224,8 +224,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 14348727}
-        m_TargetAssemblyTypeName: FadeOutMenu, Assembly-CSharp
-        m_MethodName: GameManu
+        m_TargetAssemblyTypeName: FadeOutSS, Assembly-CSharp
+        m_MethodName: GameMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -222,8 +222,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 14348727}
-        m_TargetAssemblyTypeName: FadeOutMenu, Assembly-CSharp
-        m_MethodName: GameManu
+        m_TargetAssemblyTypeName: FadeOutSS, Assembly-CSharp
+        m_MethodName: GameMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -558,7 +558,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 71712681}
         m_TargetAssemblyTypeName: FadeOutSS, Assembly-CSharp
-        m_MethodName: GameManu
+        m_MethodName: GameMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2223,8 +2223,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 308213514}
-        m_TargetAssemblyTypeName: FadeOutMenu, Assembly-CSharp
-        m_MethodName: GameManu
+        m_TargetAssemblyTypeName: FadeOutSS, Assembly-CSharp
+        m_MethodName: GameMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4741,6 +4741,7 @@ MonoBehaviour:
   pauseFlag: 0
   beforeTimeS: 1
   FPCamera: {fileID: 640530196}
+  CharaPosition: 5
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
