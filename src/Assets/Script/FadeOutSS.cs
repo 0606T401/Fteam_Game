@@ -36,7 +36,7 @@ public class FadeOutSS : MonoBehaviour
         }
     }
 
-    public void GameManu()
+    public void GameMenu()
     {
         Panelfade.SetActive(true);
         fadeout = true;
