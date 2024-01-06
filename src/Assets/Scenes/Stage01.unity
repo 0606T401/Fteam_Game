@@ -4626,6 +4626,7 @@ MonoBehaviour:
   pauseFlag: 0
   beforeTimeS: 1
   FPCamera: {fileID: 0}
+  CharaPosition: 5
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12121,6 +12122,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1935674877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935674879}
+  - component: {fileID: 1935674878}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1935674878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935674877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fd0126b3581434d850b7ca67622b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountUpTime: 0
+  time: {fileID: 1757269201}
+  goal: {fileID: 1395726089}
+  data: {fileID: 764699341}
+  end: 0
+  bestTime2: 0
+  key2: BestTime
+  timerText: {fileID: 1757269201}
+  bestTimerText: {fileID: 1714067017}
+--- !u!4 &1935674879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935674877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6199999, y: 310.40002, z: -0.19400024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1950292678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1621077872713070137, guid: 63511ba48a0dcaf41977485b46bc0c80, type: 3}
@@ -13584,6 +13638,10 @@ PrefabInstance:
       propertyPath: CUTimer
       value: 
       objectReference: {fileID: 1757269200}
+    - target: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: CUTimer2
+      value: 
+      objectReference: {fileID: 1935674878}
     - target: {fileID: 7003867929965126909, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: m_Name
       value: Chara_father
