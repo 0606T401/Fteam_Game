@@ -95,53 +95,54 @@ public class PlayerMove : MonoBehaviour
 
         if (timer.CountDownTime <= 0)
         {
-            if (normalFall.playerDistance > 0)
-            {
-                // ¶‚ÉˆÚ“®
-                if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
-                {
-                    if (CharaPosition % 3 != 1)
-                    {
-                        CharaPosition -= 1;
-                        transform.Translate(-maxCol, 0, 0);
-                    }
-                }
-
-                // ‰E‚ÉˆÚ“®
-                if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
-                {
-                    if (CharaPosition % 3 != 0)
-                    {
-                        CharaPosition += 1;
-                        transform.Translate(maxCol, 0, 0);
-                    }
-                }
-
-                // ã‚ÉˆÚ“®
-                if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
-                {
-                    if (CharaPosition > 3)
-                    {
-                        CharaPosition -= 3;
-                        transform.Translate(0, maxRow, 0);
-                    }
-                }
-
-                // ‰º‚ÉˆÚ“®
-                if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
-                {
-                    if (CharaPosition < 7)
-                    {
-                        CharaPosition += 3;
-                        transform.Translate(0, -maxRow, 0);
-                    }
-                }
-
-            }
+            
 
 
             if (!CUTimer.end || !CUTimer2.end)
             {
+                if (normalFall.playerDistance > 0)
+                {
+                    // ¶‚ÉˆÚ“®
+                    if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
+                    {
+                        if (CharaPosition % 3 != 1)
+                        {
+                            CharaPosition -= 1;
+                            transform.Translate(maxCol, 0, 0, Space.World);
+                        }
+                    }
+
+                    // ‰E‚ÉˆÚ“®
+                    if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
+                    {
+                        if (CharaPosition % 3 != 0)
+                        {
+                            CharaPosition += 1;
+                            transform.Translate(-maxCol, 0, 0, Space.World);
+                        }
+                    }
+
+                    // ã‚ÉˆÚ“®
+                    if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
+                    {
+                        if (CharaPosition > 3)
+                        {
+                            CharaPosition -= 3;
+                            transform.Translate(0, 0, -maxRow, Space.World);
+                        }
+                    }
+
+                    // ‰º‚ÉˆÚ“®
+                    if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
+                    {
+                        if (CharaPosition < 7)
+                        {
+                            CharaPosition += 3;
+                            transform.Translate(0, 0, maxRow, Space.World);
+                        }
+                    }
+
+                }
 
                 if (FPCamera.activeSelf == true)
                 {
