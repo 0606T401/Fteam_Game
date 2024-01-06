@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -38,7 +39,9 @@ public class PlayerMove : MonoBehaviour
     public float beforeTimeS = 1;
 
     [SerializeField] GameObject FPCamera;
-
+    [SerializeField] private int CharaPosition = 5;
+    float maxCol = 3f;
+    float maxRow = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,37 +52,37 @@ public class PlayerMove : MonoBehaviour
 
 
     // コールバックの登録・解除
-    private void Awake()
-    {
-        // 入力値が0以外の値に変化したときに呼び出されるコールバック
-        _moveAction.action.performed += OnMove;
+    //private void Awake()
+    //{
+    //    // 入力値が0以外の値に変化したときに呼び出されるコールバック
+    //    _moveAction.action.performed += OnMove;
 
-        // 入力値が0に戻ったときに呼び出されるコールバック
-        _moveAction.action.canceled += OnMove;
-    }
+    //    // 入力値が0に戻ったときに呼び出されるコールバック
+    //    _moveAction.action.canceled += OnMove;
+    //}
 
-    private void OnDestroy()
-    {
-        _moveAction.action.performed -= OnMove;
-        _moveAction.action.canceled -= OnMove;
-    }
+    //private void OnDestroy()
+    //{
+    //    _moveAction.action.performed -= OnMove;
+    //    _moveAction.action.canceled -= OnMove;
+    //}
 
-    // InputActionの有効化・無効化
-    private void OnEnable() => _moveAction.action.Enable();
-    private void OnDisable() => _moveAction.action.Disable();
+    //// InputActionの有効化・無効化
+    //private void OnEnable() => _moveAction.action.Enable();
+    //private void OnDisable() => _moveAction.action.Disable(); 
 
-    // コールバックの実装
-    private void OnMove(InputAction.CallbackContext context)
-    {
-        // 2軸入力を受け取る
-        var move = context.ReadValue<Vector2>();
+    //// コールバックの実装
+    //private void OnMove(InputAction.CallbackContext context)
+    //{
+    //    // 2軸入力を受け取る
+    //    var move = context.ReadValue<Vector2>();
 
-        moveX = -move.x;
-        moveY = -move.y;
+    //    moveX = -move.x;
+    //    moveY = -move.y;
 
-        // 2軸入力の値を表示
-        print($"move: {move}");
-    }
+    //    // 2軸入力の値を表示
+    //    print($"move: {move}");
+    //}
 
 
     // Update is called once per frame
@@ -92,37 +95,54 @@ public class PlayerMove : MonoBehaviour
 
         if (timer.CountDownTime <= 0)
         {
-            //if (normalFall.playerDistance > 0)
-            //{
-            //    // 左に移動
-            //    if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
-            //    {
-            //        transform.Translate(playerMove, 0, 0, Space.World);
-            //    }
+            if (normalFall.playerDistance > 0)
+            {
+                // 左に移動
+                if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
+                {
+                    if (CharaPosition % 3 != 1)
+                    {
+                        CharaPosition -= 1;
+                        transform.Translate(-maxCol, 0, 0);
+                    }
+                }
 
-            //    // 右に移動
-            //    if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
-            //    {
-            //        transform.Translate(-playerMove, 0, 0, Space.World);
-            //    }
+                // 右に移動
+                if (Input.GetAxis("Horizontal") == 1 || Input.GetKey(KeyCode.D))
+                {
+                    if (CharaPosition % 3 != 0)
+                    {
+                        CharaPosition += 1;
+                        transform.Translate(maxCol, 0, 0);
+                    }
+                }
 
-            //    // 上に移動
-            //    if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
-            //    {
+                // 上に移動
+                if (Input.GetAxis("Vertical") == 1 || Input.GetKey(KeyCode.W))
+                {
+                    if (CharaPosition > 3)
+                    {
+                        CharaPosition -= 3;
+                        transform.Translate(0, maxRow, 0);
+                    }
+                }
 
-            //        transform.Translate(0, 0, -playerMove, Space.World);
-            //    }
+                // 下に移動
+                if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
+                {
+                    if (CharaPosition < 7)
+                    {
+                        CharaPosition += 3;
+                        transform.Translate(0, -maxRow, 0);
+                    }
+                }
 
-            //    // 下に移動
-            //    if (Input.GetAxis("Vertical") == -1 || Input.GetKey(KeyCode.S))
-            //    {
-            //        transform.Translate(0, 0, playerMove, Space.World);
-            //    }
-
+            }
 
 
             if (!CUTimer.end || !CUTimer2.end)
             {
+
                 if (FPCamera.activeSelf == true)
                 {
                     if (transform.eulerAngles.y == 180)
