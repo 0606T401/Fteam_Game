@@ -42,6 +42,9 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private int CharaPosition = 5;
     float maxCol = 3f;
     float maxRow = 1.5f;
+
+    float TimeElapsed = 0;
+    public float TimeMoment = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,7 +91,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        TimeElapsed += Time.deltaTime;
 
         //ÉvÉåÉCÉÑÅ[Çà⁄ìÆÇ≥ÇπÇÈ
         CharacterController controller = GetComponent<CharacterController>();
@@ -100,7 +103,7 @@ public class PlayerMove : MonoBehaviour
 
             if (!CUTimer.end || !CUTimer2.end)
             {
-                if (normalFall.playerDistance > 0)
+                if (normalFall.playerDistance > 0 && TimeElapsed >= TimeMoment / 10)
                 {
                     // ç∂Ç…à⁄ìÆ
                     if (Input.GetAxis("Horizontal") == -1 || Input.GetKey(KeyCode.A))
@@ -109,6 +112,7 @@ public class PlayerMove : MonoBehaviour
                         {
                             CharaPosition -= 1;
                             transform.Translate(maxCol, 0, 0, Space.World);
+                            TimeElapsed = 0;
                         }
                     }
 
@@ -119,6 +123,7 @@ public class PlayerMove : MonoBehaviour
                         {
                             CharaPosition += 1;
                             transform.Translate(-maxCol, 0, 0, Space.World);
+                            TimeElapsed = 0;
                         }
                     }
 
@@ -129,6 +134,7 @@ public class PlayerMove : MonoBehaviour
                         {
                             CharaPosition -= 3;
                             transform.Translate(0, 0, -maxRow, Space.World);
+                            TimeElapsed = 0;
                         }
                     }
 
@@ -139,6 +145,7 @@ public class PlayerMove : MonoBehaviour
                         {
                             CharaPosition += 3;
                             transform.Translate(0, 0, maxRow, Space.World);
+                            TimeElapsed = 0;
                         }
                     }
 

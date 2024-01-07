@@ -4750,6 +4750,7 @@ MonoBehaviour:
   beforeTimeS: 1
   FPCamera: {fileID: 0}
   CharaPosition: 5
+  TimeMoment: 1
 --- !u!114 &626832839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13965,6 +13966,10 @@ PrefabInstance:
       propertyPath: CUTimer2
       value: 
       objectReference: {fileID: 1935674878}
+    - target: {fileID: 4258867932768083953, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: TimeMoment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: CUTimer
       value: 
