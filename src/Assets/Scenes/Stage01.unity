@@ -587,6 +587,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63893867 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4258867932768083953, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+  m_PrefabInstance: {fileID: 7003867930317409068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &76890832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,17 +3045,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5075992368016377592, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
   m_PrefabInstance: {fileID: 7003867930317409068}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &429829078 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
-  m_PrefabInstance: {fileID: 7003867930317409068}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429829076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcbe48ede67d5374a8bd68d6f9bc94d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &429829079
 Animator:
   serializedVersion: 5
@@ -4615,7 +4615,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626832831}
-  m_LocalRotation: {x: 0.008436036, y: -0.1657996, z: 0.0014183754, w: 0.98612237}
+  m_LocalRotation: {x: 0.008436036, y: -0.16579959, z: 0.0014183751, w: 0.98612237}
   m_LocalPosition: {x: 0.6433083, y: 300, z: -2.222582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6669,7 +6669,7 @@ MonoBehaviour:
   GameOver: {fileID: 318030940}
   ClearPanel: {fileID: 775377234}
   PausePanel: {fileID: 1770067022}
-  pauseFlag: {fileID: 429829078}
+  pauseFlag: {fileID: 63893867}
   PauseFirstbutton: {fileID: 1806463257}
 --- !u!4 &969682936
 Transform:
@@ -9898,7 +9898,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514112129}
-  m_LocalRotation: {x: 0.008436036, y: -0.1657996, z: 0.0014183754, w: 0.98612237}
+  m_LocalRotation: {x: 0.008436036, y: -0.16579959, z: 0.0014183751, w: 0.98612237}
   m_LocalPosition: {x: 14.100001, y: 314.2, z: -2.7345371}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
   m_ConstrainProportionsScale: 0
@@ -11241,7 +11241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389286212eb142c4cb6b8f977f3dbcf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMove: {fileID: 0}
+  playerMove: {fileID: 63893867}
   PauseCheck: {fileID: 969682935}
   PausePanel: {fileID: 1770067022}
 --- !u!114 &1806463260
@@ -13957,6 +13957,14 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 764699341}
+    - target: {fileID: 4258867932768083953, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: CUTimer
+      value: 
+      objectReference: {fileID: 1757269200}
+    - target: {fileID: 4258867932768083953, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
+      propertyPath: CUTimer2
+      value: 
+      objectReference: {fileID: 1935674878}
     - target: {fileID: 6044231380150611645, guid: 0d34be599a30b494a921d7c8ddf3f68f, type: 3}
       propertyPath: CUTimer
       value: 
