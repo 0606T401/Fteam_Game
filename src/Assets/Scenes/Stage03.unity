@@ -4913,7 +4913,7 @@ MonoBehaviour:
   data: {fileID: 764699341}
   GameOver: {fileID: 318030940}
   ClearPanel: {fileID: 775377234}
-  pauseFirstbutton: {fileID: 788720316}
+  pauseFirstbutton: {fileID: 2074246659}
   goal: {fileID: 1395726089}
 --- !u!1 &705507993
 GameObject:
